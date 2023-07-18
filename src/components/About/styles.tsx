@@ -12,7 +12,7 @@ export const Container = styled.section`
     border: solid 1px #9ca3af56; 
     background-color: var(--black-200);
     width: 70%;
-    height: 70vh;
+    height: 60vh;
     display: flex;
   }
   .wrapper-left{
@@ -20,18 +20,17 @@ export const Container = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 4px solid red; 
   }
   .frame{
     margin-left: 10rem;
+    margin-top: 40px;
+    width: 20rem;
     padding-bottom: 30px;
-    width: 100%;
-    height: auto;
-    border: 4px solid var(--primary); 
+    border: 3px solid var(--primary); 
   } 
   .frame img{
     width: 100%;
-    height: auto;
+    height: 25rem;
     margin-top: -40px;
     margin-left: calc(0% - 40px);
   }
@@ -41,6 +40,9 @@ export const Container = styled.section`
     align-items: center;
     justify-content: center;
     flex-direction: column;
+  }
+  .wrapper-right h1{
+    font-size: 2rem;
   }
   .wrapper-right div{
     width: 60%;
@@ -62,22 +64,6 @@ export const Container = styled.section`
   }
   a:first-child{
     text-decoration: underline;
-  }
-  a:last-child{
-    border: solid 1px #ffffffe9;
-    background-color: var(--white);
-    color: var(--black-200);
-    padding: .2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: .5rem;
-    border-radius: .2rem;
-    font-weight: 400;
-    transition: .5s;
-  }
-  a:last-child:hover{
-    background-color: #ffffffdf;
   }
   
 `;

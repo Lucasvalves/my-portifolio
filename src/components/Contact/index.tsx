@@ -2,15 +2,16 @@ import { Container } from './styles';
 import { FaWhatsapp} from 'react-icons/fa';
 import {HiOutlineEnvelope, HiOutlineMapPin, HiCheckCircle} from 'react-icons/hi2'; 
 import {FaSpinner } from 'react-icons/fa'; 
-import {FormEvent, useRef, useState } from 'react';
+import {FormEvent, useRef} from 'react';
 import emailjs from '@emailjs/browser';
+import Button from '../Button';
+import useAppContext from '../../hook/useAppContext';
 
 export function Contact() {
-  const form = useRef<HTMLFormElement>(null);
-  const [loading, setLoading] = useState(false);
-  const [success, setSuccess] = useState(false);
-  const [error, setError] = useState(false);
 
+  const {loading, setLoading, success, setSuccess, error, setError} = useAppContext();
+  const form = useRef<HTMLFormElement | null>(null);
+  
   const sendEmail = (event: FormEvent<HTMLFormElement>)=>{
     event.preventDefault();
 
@@ -104,14 +105,14 @@ export function Contact() {
             />
             </div> 
           </div>
-          <button 
+          <Button 
             type="submit"
             disabled={loading}
           >
             {loading && <FaSpinner/>}
             {success && <HiCheckCircle/>}
             Enviar mensagem
-          </button>
+          </Button>
         </form>
       </div>
       <div className="wrapper-right">

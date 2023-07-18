@@ -1,6 +1,7 @@
 import { Container } from './styles';
 import myPhoto from '../../assets/my_photo.png';
 import { BiArrowToBottom } from 'react-icons/bi';
+import Button from '../Button';
 
 export function About() {
   return (
@@ -22,8 +23,10 @@ export function About() {
             <a href="https://wa.me/5571996579989" target='blank'>Entre em contato </a>
             <span>ou</span>
             <a href="https://drive.google.com/file/d/1hJrXRqMveoZmqafXYh-RAorq40rPoH4s/view?usp=drive_link" target='blank'>
-              <BiArrowToBottom size={20}/>
-              <span>Download CV</span>
+              <Button>
+                <BiArrowToBottom size={20}/>
+                Download CV
+              </Button>
             </a>
           </span>
         </div>

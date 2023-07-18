@@ -51,25 +51,14 @@ export const Container = styled.section`
     width: 100%;
     height: 8rem;
     resize:none;
+    font-size: 1rem;
   }
   .input{
     height: 2rem;
     width: 100%;
   }
-  button{
-    border: solid 1px #ffffffe9;
-    background-color: var(--white);
-    color: var(--black-200);
-    padding: .4rem;
-    font-size: 1rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    border-radius: .2rem;
-    transition: .5s;
-    margin-top: .5rem;
-  }
-  button:hover{
-    background-color: #ffffffdf;
+  Button{
+    width: 12rem;
   }
   .wrapper-right{
     display: flex;
@@ -85,29 +74,41 @@ export const Container = styled.section`
     width: 21rem;
     height: 6rem;
     margin-bottom: 20px;
-    span:first-child{
-      display: flex;
-      justify-content: center;
-      align-items: center;  
-      width: 20%;
-      font-size: 40px;
-    }
-    span:last-child{
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      width: 80%;
-      h6:first-child{
-        font-size: 1rem;
-        font-weight: 600;
-      }
-      h6:last-child{
-        color: var(--gray-200);
-        font-size: 1rem;
-        font-weight: 200;
-        text-decoration: underline;
-      }
-    }
   }
+  span:first-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    width: 20%;
+    font-size: 40px;
+  }
+  span:first-child:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+  span:last-child{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+  }
+  h6:first-child{
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  h6:first-child:hover{
+    color: #ffffffc2;
+    transition: .5s;
+  }
+  h6:last-child{
+    color: var(--gray-200);
+    font-size: 1rem;
+    font-weight: 200;
+    text-decoration: underline;
+  }
+  h6:last-child:hover{
+    color: #9ca3afd6;
+    transition: .5s;
+  }   
 `;
 

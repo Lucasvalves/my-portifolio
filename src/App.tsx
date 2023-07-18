@@ -7,6 +7,7 @@ import { Contact } from './components/Contact'
 import { Footer } from './components/Footer';
 import { GlobalStyle } from './styles/global';
 import { MenuMobile } from './components/MenuMobile';
+import { ScroolBar } from './components/ScroolUp';
 import AppProvider from './contexts/AppProvider';
 
 function App() { 
@@ -16,6 +17,7 @@ function App() {
         <GlobalStyle />
         <MenuMobile/>
         <Header/>
+        <ScroolBar/>
         <Hero/>
         <About />
         <Techs/>
