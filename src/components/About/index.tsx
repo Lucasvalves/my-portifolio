@@ -13,7 +13,7 @@ export function About() {
           </span>
         </div>
         <div className='wrapper-right'>
-          <h1>Sobre Mim</h1>
+          <h2>Sobre Mim</h2>
           <div>
             <p>Meu nome é Lucas Veloso, tenho 25 anos, moro em Lauro de Freitas-BA e sou Desenvolvedor Full-Stack em busca da minha primeira oportunidade na area.</p>
             <p>Sou formado em Técnico em Desenvolvimento de Sistemas pelo SENAI e atualmente estou cursando Bacharelado em Sistemas de Informação na UNIFACS.</p>

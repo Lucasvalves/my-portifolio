@@ -61,7 +61,7 @@ export function Contact() {
   return (
     <Container id="contact">
     <div className="title">
-      <h1>Entre em Contato</h1>
+      <h2>Entre em Contato</h2>
       <p>
       Entre em contato por formulário ou WhatsApp, com certeza irei poder te ajudar.
       </p>
@@ -109,8 +109,7 @@ export function Contact() {
             type="submit"
             disabled={loading}
           >
-            {loading && <FaSpinner/>}
-            {success && <HiCheckCircle/>}
+            {loading? loading && <FaSpinner className="spinner"/> :success && <HiCheckCircle />}
             Enviar mensagem
           </Button>
         </form>
@@ -121,8 +120,8 @@ export function Contact() {
             <a href={contact.link} target="blank">
               <span>{contact.icon}</span>
               <span>
-                <h6>{contact.name}</h6>
-                <h6>{contact.description}</h6>
+                <h4>{contact.name}</h4>
+                <h4>{contact.description}</h4>
               </span> 
             </a>
           </p>

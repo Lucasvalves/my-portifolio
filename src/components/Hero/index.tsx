@@ -33,10 +33,10 @@ export function Hero() {
             <img src={gitHub} alt="gitHub" className="icon"/>
           </a>
         </span>
-        <h2 className="center">
-          <div></div>
-          Desenvolvedor Full-Stack
-        </h2>
+        <span className="center job">
+          <div className="line"></div>
+          <h2 className="job">Desenvolvedor Full-Stack</h2>
+        </span>
       </div>
     </Container>
   )

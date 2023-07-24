@@ -4,7 +4,6 @@ export const Container = styled.section`
   display: flex;
   align-items: center;
   flex-direction: column;
-  font-size: 1.5rem;
   width: 100%;
   height: 60vh;
   background-color: var(--black-200);
@@ -14,6 +13,9 @@ export const Container = styled.section`
     flex-direction: column;
     width: 60%;
     margin-top: 2rem;
+  }
+  .title h2{
+    font-size: 1.953rem;
   }
   .title p{
     font-size: 1rem;
@@ -60,6 +62,14 @@ export const Container = styled.section`
   Button{
     width: 12rem;
   }
+  .spinner{
+    animation: spin 1s linear infinite;
+  }
+  @keyframes spin {
+    to{
+      transform: rotate(360deg)
+    }
+  }
   .wrapper-right{
     display: flex;
     align-items: center;
@@ -74,6 +84,7 @@ export const Container = styled.section`
     width: 21rem;
     height: 6rem;
     margin-bottom: 20px;
+
   }
   span:first-child{
     display: flex;
@@ -92,23 +103,24 @@ export const Container = styled.section`
     flex-direction: column;
     width: 80%;
   }
-  h6:first-child{
+  h4:first-child{
     font-size: 1rem;
     font-weight: 600;
   }
-  h6:first-child:hover{
+  h4:first-child:hover{
     color: #ffffffc2;
     transition: .5s;
   }
-  h6:last-child{
+  h4:last-child{
     color: var(--gray-200);
     font-size: 1rem;
     font-weight: 200;
     text-decoration: underline;
   }
-  h6:last-child:hover{
+  h4:last-child:hover{
     color: #9ca3afd6;
     transition: .5s;
   }   
+
 `;
 

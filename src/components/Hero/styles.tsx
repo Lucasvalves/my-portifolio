@@ -4,7 +4,7 @@ export const Container = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 3rem;
+  font-size: 3.52rem;
   width: 100%;
   height: 100vh;
   background-color: var(--black-100);
@@ -21,7 +21,6 @@ export const Container = styled.section`
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-
   .lastName{
     color: var(--primary);
     font-weight: 400;
@@ -43,25 +42,31 @@ export const Container = styled.section`
     @media(max-width: 430px) {
       width: 1.2rem;
     }
+    @media(max-width: 320px) {
+      width: .9rem;
+    }
   }
   .icon:hover{
     transform: scale(1.1);
     transition: 0.5s;
   }
-  >div h2{
+  .job{
     display: flex;
     font-weight: 400;
     align-items: center;
     gap: .8rem;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     @media(max-width: 620px) {
       font-size: 1rem;
     }
     @media(max-width: 430px) {
       font-size: .9rem;
     }
+    @media(max-width: 320px) {
+    font-size: .6rem;
+    }
   }
-  >div h2 div{
+  .line{
     width: 2.5rem;
     height: .2rem;
     border-radius: 1rem;
@@ -72,6 +77,12 @@ export const Container = styled.section`
     @media(max-width: 430px) {
       width: 1.5rem;
     }
+    @media(max-width: 320px) {
+      width: 1rem;
+    }
+  }
+  @media(max-width: 850px) {
+    font-size: 2.52rem;
   }
   @media(max-width: 620px) {
     font-size: 2rem;
@@ -80,7 +91,7 @@ export const Container = styled.section`
     font-size: 1.5rem;
   }
   @media(max-width: 320px) {
-    font-size: 1rem;
+    font-size: .8rem;
   }
 
 `;
