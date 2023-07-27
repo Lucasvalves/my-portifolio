@@ -69,40 +69,40 @@ export function Contact() {
     <div className="wrapper-primary">
       <div className="wrapper-left">
         <form ref={form} onSubmit={sendEmail} >
-          <div className='container-show-inputs'>   
+          <div className='container-show-textarea'>   
             <label htmlFor="message">
               Mensagem:
             </label>
+            <textarea  
+              name="message"
+              id="message" 
+              required
+            />
           </div>
-          <textarea  
-            name="message"
-            id="message" 
-            required
-          />
           <div className="container-show-inputs">
-          <div className="align-inputs">        
-            <label htmlFor="fullName">
-              Seu nome:
-            </label>
-            <input
-              type="text" 
-              name="fullName"
-              id="fullName"
-              className="input"
-              required
-            />
-          </div> 
-          <div className="align-inputs"> 
-            <label htmlFor="fullName">
-                    Seu email:
-            </label>
-            <input
-              id="email"
-              type="email" 
-              name="email"
-              className="input"
-              required
-            />
+            <div className="align-inputs">        
+              <label htmlFor="fullName">
+                Seu nome:
+              </label>
+              <input
+                type="text" 
+                name="fullName"
+                id="fullName"
+                className="input"
+                required
+              />
+            </div> 
+            <div className="align-inputs"> 
+              <label htmlFor="fullName">
+                      Seu email:
+              </label>
+              <input
+                id="email"
+                type="email" 
+                name="email"
+                className="input"
+                required
+              />
             </div> 
           </div>
           <Button 

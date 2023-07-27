@@ -4,7 +4,7 @@ export const Container = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 3.52rem;
+  font-size: 1.5rem;
   width: 100%;
   height: 100vh;
   background-color: var(--black-100);
@@ -33,18 +33,9 @@ export const Container = styled.section`
     justify-content: center;
   }
   .icon{
-    width: 2rem;
+    width: 1.2rem;
     height: auto;
     margin-left: 1rem;
-    @media(max-width: 620px) {
-      width: 1.5rem;
-    }
-    @media(max-width: 430px) {
-      width: 1.2rem;
-    }
-    @media(max-width: 320px) {
-      width: .9rem;
-    }
   }
   .icon:hover{
     transform: scale(1.1);
@@ -55,44 +46,49 @@ export const Container = styled.section`
     font-weight: 400;
     align-items: center;
     gap: .8rem;
-    font-size: 1.25rem;
-    @media(max-width: 620px) {
-      font-size: 1rem;
-    }
-    @media(max-width: 430px) {
-      font-size: .9rem;
-    }
-    @media(max-width: 320px) {
-    font-size: .6rem;
-    }
+    font-size: .9rem;
   }
   .line{
-    width: 2.5rem;
+    width: 1.5rem;
     height: .2rem;
     border-radius: 1rem;
     background-color: var(--primary);
-    @media(max-width: 620px) {
+  }
+  @media(max-width: 359px) { 
+     font-size: .8rem;
+    .icon{
+      width: .9rem;
+    }
+    .job{
+      font-size: .6rem;
+    }
+    .line{
+      width: 1rem;
+    } 
+  } 
+  @media(min-width: 480px) and (max-width: 767px) {
+    font-size: 2.52rem;
+    .icon{
+        width: 1.5rem;
+    }
+    .job{
+      font-size: 1rem;
+    }
+    .line{
       width: 1.8rem;
     }
-    @media(max-width: 430px) {
-      width: 1.5rem;
+  }
+  @media(min-width: 768px) {
+    font-size: 3.52rem;
+    .icon{
+      width: 2rem;
     }
-    @media(max-width: 320px) {
-      width: 1rem;
+    .job{
+      font-size: 1.25rem;
+    }
+    .line{
+      width: 2.5rem;
     }
   }
-  @media(max-width: 850px) {
-    font-size: 2.52rem;
-  }
-  @media(max-width: 620px) {
-    font-size: 2rem;
-  }
-  @media(max-width: 430px) {
-    font-size: 1.5rem;
-  }
-  @media(max-width: 320px) {
-    font-size: .8rem;
-  }
-
 `;
 

@@ -44,11 +44,9 @@ export const Container = styled.header`
         width: 50px;
       }
     }
-
     .mobile {
       display: none;
     }
-    
     @media(max-width: 915px) {
       .mobile {
         display: initial;
@@ -61,6 +59,6 @@ export const Container = styled.header`
   }
 
   @media(max-width: 700px) {
-    padding: 14.5px 16px;
+    padding: 14.5px 25px;
   }
 `;
