@@ -10,7 +10,6 @@ export const Container = styled.header`
   color: var(--gray-100);
   padding: 14.5px 60px;
   position: fixed;
-  
   >section:last-child{
     display: flex;
     justify-content: flex-end;
@@ -24,19 +23,19 @@ export const Container = styled.header`
     @media(max-width: 900px) {
         width: 50%;
     }
-
     &:last-child {
       gap: 1rem;
     }
     >span{
       width: 40%;
+      height: 100%;
       display: flex;
       justify-content: end;
     }
     >span a{
       cursor: pointer;
     }
-    >span >img {
+    >span a> img{
       width: 100px;
       height: auto;
       margin-top: -10px;

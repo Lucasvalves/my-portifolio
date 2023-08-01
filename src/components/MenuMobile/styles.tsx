@@ -16,7 +16,7 @@ export const Container = styled.section<IContainerProps>`
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(34deg, var(--gray-200) 0%, rgba(1, 1, 1, 0.972) 95%);
+  background: linear-gradient(34deg, rgba(34, 33, 33, 0.972)0%, rgba(1, 1, 1, 0.972) 95%);
   opacity: 0;
   pointer-events: none;
   transform: translateY(50px);

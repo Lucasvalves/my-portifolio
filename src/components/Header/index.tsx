@@ -1,5 +1,5 @@
 import { Container } from './styles';
-import logoImg from '../../assets/Logo.png';
+import logoImg from '../../assets/logo.png';
 import { RiMenu3Fill } from 'react-icons/ri';
 import useAppContext from '../../hook/useAppContext';
 import { Nav } from '../Nav/index';

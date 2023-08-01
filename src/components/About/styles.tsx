@@ -153,13 +153,14 @@ export const Container = styled.section`
     }
   }
   @media(min-width: 768px) and (max-width: 1023px){
-    height: 60vh;
+ 
+    background-color: blue; 
     >div{
       width: 80%;
       gap: .1rem;
       display: flex;
       flex-direction: row;
-      height: 40vh;
+      height: 60vh;
     }
     .wrapper-left{
       height: 100%;
@@ -167,7 +168,7 @@ export const Container = styled.section`
     }
     .frame{
       width: 20rem;
-      height: 70%;
+      height: 50%;
       border: 10px solid var(--primary); 
     } 
     .wrapper-right {
@@ -196,8 +197,9 @@ export const Container = styled.section`
     }
   }
   @media(min-width: 1024px) {
+    background-color: #ff000060; 
     >div{
-      width: 60%;
+      width: 80%;
       gap: .1rem;
       display: flex;
       flex-direction: row;
@@ -205,6 +207,7 @@ export const Container = styled.section`
     }
     .wrapper-left{
       height: 100%;
+      width: 50%;
     }
     .frame{
       height: 60%;
@@ -221,9 +224,11 @@ export const Container = styled.section`
       border-radius: 2px;
     }
     .wrapper-right {
-      width: 100%;
+      width: 50%;
       height: 100%;
-      justify-content: start;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
     }
     .wrapper-right >h2{
       margin-top:  10px;
@@ -232,7 +237,7 @@ export const Container = styled.section`
     }
     .wrapper-right >div{  
       margin-top:  10px;
-      height: 75%;
+      height: 53%;
     }
     .wrapper-right p{
       font-size: 1rem;
@@ -250,9 +255,10 @@ export const Container = styled.section`
     }
   }
   @media(min-width: 1201px) {
-    /* >div{
-      gap: 2%;
-    } */
+    background-color: #32c8645f; 
+    >div{
+      width: 60%;
+    }
     .wrapper-left{
       width: 50%;
     }
