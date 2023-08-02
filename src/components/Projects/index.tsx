@@ -17,7 +17,7 @@ export function Projects() {
     {
       image: projectMemory,
       name: 'Gerenciador de Salão',
-      description: ' Sistema de gerenciamento de usuários e clientes de um salão de beleza.',
+      description: 'O projeto tem como objetivo fazer a gerência de usuários e clientes de salão de beleza.',
       techUsed: 'Node JS, TypeScript, React',
       linkGitHub: 'https://github.com/Lucasvalves/sistema-de-agendamento',
       page: 'https://goo.gl/maps/Cmyke6t7GYNX1uabA',
@@ -26,7 +26,7 @@ export function Projects() {
     {
       image: projectMemory,
       name: 'Jogo da Memória',
-      description: 'Projeto jogo da memoria em react.',
+      description: 'Projeto jogo da memoria.',
       techUsed:'React',
       linkGitHub: 'https://github.com/Lucasvalves/jogoDaMemoriaReact',
       page: 'https://goo.gl/maps/Cmyke6t7GYNX1uabA',
@@ -35,7 +35,7 @@ export function Projects() {
     {
       image: '',
       name: 'SysCopa',
-      description: 'Projeto que realiza o CRUD em dados existentes uma Copa do Mundo como nome de seleções, árbitros, técnicos e fases.',
+      description: 'Projeto realiza o inserção, seleção, atualização e deleção de dados existentes uma Copa do Mundo como nome de seleções, árbitros, técnicos e fases.',
       techUsed: 'Mysql, Python',
       linkGitHub: 'https://github.com/Lucasvalves/sys_copa',
       page: 'https://goo.gl/maps/Cmyke6t7GYNX1uabA',
@@ -58,23 +58,25 @@ export function Projects() {
                   <div className='container-data'>
                     <h4>{projetc.name}</h4>
                     <p>{projetc.description}</p>
-                    <p>{projetc.techUsed}</p>
-                    <div className='links'>
-                      {projetc.stack != 'backend' ? 
-                      <div>
-                        <a href={projetc.linkGitHub}target='_blank' title='Ver Código'>
-                          <AiFillGithub size='20'/>
-                        </a>
-                        <a href={projetc.page}target='_blank' title='Ver Projeto'>
-                          <AiOutlineLink size='20'/> 
-                        </a> 
+                    <div className='align-items'>
+                      <div className='links'>
+                        {projetc.stack != 'backend' ? 
+                          <div>
+                            <a href={projetc.linkGitHub}target='_blank' title='Ver Código'>
+                              <AiFillGithub size='20'/>
+                            </a>
+                            <a href={projetc.page}target='_blank' title='Ver Projeto'>
+                              <AiOutlineLink size='20'/> 
+                            </a> 
+                          </div>
+                        :
+                          <div>
+                            <a href={projetc.linkGitHub}target='_blank' title='Ver Código'>
+                              <AiFillGithub size='20'/>
+                            </a>
+                          </div>}
                       </div>
-                      :
-                      <div>
-                        <a href={projetc.page}target='_blank' title='Ver Projeto'>
-                          <AiOutlineLink size='20'/>
-                        </a> 
-                      </div>}
+                      <p>{projetc.techUsed}</p>
                     </div>
                   </div>
                 </div>   

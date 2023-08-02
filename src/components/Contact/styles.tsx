@@ -212,11 +212,9 @@ export const Container = styled.section`
       width: 80%;
       height: 60%;
       gap: 3%;
-      border: 1px yellow solid;
     }
     .wrapper-left{
       width: 60%;
-      border: 1px red solid;
     }
     .container-show-textarea{
       margin-bottom: .5rem;
@@ -235,7 +233,6 @@ export const Container = styled.section`
       width: 40%;
       font-size: 1rem;
       margin-top: 3rem;
-      border: 1px red solid;
     }
     .contactsLinks {
       width: 100%;

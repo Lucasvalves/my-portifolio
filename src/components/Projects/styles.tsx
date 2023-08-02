@@ -5,13 +5,12 @@ export const Container = styled.section`
   align-items: center;
   justify-content: center;
   flex-direction:  column;
-  font-size: 1rem;
   width: 100%;
   background-color: var(--black-100);
   background-color: red;
   >h2{
     width: 90%;
-    font-size: 1.25rem;
+    font-size: 1.953rem;
     font-weight: 600;
     white-space: nowrap;
     margin-top: 10px;
@@ -21,7 +20,6 @@ export const Container = styled.section`
     width: 90%;
     display: flex;
     justify-content: center; 
-    /* flex-direction: column; */
     align-items: center;
     flex-wrap: wrap ;
     gap: 20px;
@@ -29,7 +27,6 @@ export const Container = styled.section`
     margin-bottom: 5%;
   }
   .show-projetcs{
-    /* width: 100%; */
     height: 400px;
     border: solid 1px #9ca3af56; 
     flex: 1 1 200px;
@@ -48,33 +45,38 @@ export const Container = styled.section`
     height: 80%;
   }
   .container-data{
-    height: 60%;
+    height: 55%;
     display: flex;
     align-items: center;
     flex-direction: column;
+    font-size: .8rem;
   }
-  .container-data p{
+  .container-data h4{
     font-size: 1rem;
+    margin-bottom: 5px;
   }
-  .container-data p:nth-child(2){
+  .container-data >p{
     margin: 0 10px;
     width: 90%;
+    height: 60%;
     text-align: justify;
     text-indent: 20px;
+  }
+  .align-items{
+    width: 90%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .links{
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 10px;
-    width: 50%;
   }
   .links >div{
     display: flex;
-    gap: 5px;
-  }
-  .links >div >a {
-    margin-top: 5px;
+    justify-content: center;
   }
   @media(min-width: 768px) and (max-width: 1400px){ 
     >h2{
@@ -97,6 +99,7 @@ export const Container = styled.section`
     background-color: #09c0f34b;
     >h2{
       width: 60%;
+  
     }
     >div{
       width: 60%;
