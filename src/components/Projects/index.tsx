@@ -62,20 +62,17 @@ export function Projects() {
                     <div className='links'>
                       {projetc.stack != 'backend' ? 
                       <div>
-                        <a href={projetc.linkGitHub}target='_blank'>
-                          <AiFillGithub>
-                          </AiFillGithub>  
+                        <a href={projetc.linkGitHub}target='_blank' title='Ver Código'>
+                          <AiFillGithub size='20'/>
                         </a>
-                        <a href={projetc.page}target='_blank'>
-                          <AiOutlineLink>
-                          </AiOutlineLink>  
+                        <a href={projetc.page}target='_blank' title='Ver Projeto'>
+                          <AiOutlineLink size='20'/> 
                         </a> 
                       </div>
                       :
                       <div>
-                        <a href={projetc.page}target='_blank'>
-                          <AiOutlineLink>
-                          </AiOutlineLink>  
+                        <a href={projetc.page}target='_blank' title='Ver Projeto'>
+                          <AiOutlineLink size='20'/>
                         </a> 
                       </div>}
                     </div>

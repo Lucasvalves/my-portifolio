@@ -153,14 +153,14 @@ export const Container = styled.section`
     }
   }
   @media(min-width: 768px) and (max-width: 1023px){
- 
+    height: 80vh;
     background-color: blue; 
     >div{
       width: 80%;
       gap: .1rem;
       display: flex;
       flex-direction: row;
-      height: 60vh;
+      height: 60%;
     }
     .wrapper-left{
       height: 100%;

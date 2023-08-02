@@ -199,7 +199,6 @@ export const Container = styled.section`
   }
   /* @media(min-width: 768px) and (max-width: 1023px){  */
   @media(min-width: 768px) and (max-width: 1400px){ 
-
     height: 60vh;
     background-color: #7529ef4a;
     .title{
@@ -318,61 +317,61 @@ export const Container = styled.section`
   } 
   @media(min-width: 1201px) {
     height: 60vh;
-      background-color: #09c0f34b;
-      .title{
-        width: 60%;
-        margin-top: 1rem;
-      }
-      .title h2{
-        font-size: 1.953rem;
-      }
-      .wrapper-primary{
-        flex-direction: row;
-        width: 60%;
-        height: 60%;
-        gap: 5%;
-      }
-      .wrapper-left{
-        width: 65%;
-      }
-      .container-show-textarea{
-        margin-bottom: .5rem;
-        width: 100%;
-      }
-      .container-show-inputs{
-        margin-bottom: .5rem;
-        flex-direction: row;
-      }
-      .align-inputs{
-        width: 50%;
-      }
-      .wrapper-right{
-        display: flex;
-        align-items: center;
-        width: 30%;
-        font-size: 1rem;
-      }
-      .contactsLinks {
-        width: 100%;
-        margin-top: 20px;
-      }
-      .contactsLinks a{
-        width: 95%;
-        height: 5.5rem;
-      }
-      span:first-child{
-        width: 20%;
-        font-size: 35px;
-      }
-      .contactsLinks h4:first-child{
-        font-size: 1rem;
-      }
-      .contactsLinks h4:last-child{
-        white-space: wrap;
-      }
-      Button{
-        width: 12rem;
-      }
+    background-color: #09c0f3a1;
+    .title{
+      width: 60%;
+      margin-top: 1rem;
+    }
+    .title h2{
+      font-size: 1.953rem;
+    }
+    .wrapper-primary{
+      flex-direction: row;
+      width: 60%;
+      height: 60%;
+      gap: 5%;
+    }
+    .wrapper-left{
+      width: 65%;
+    }
+    .container-show-textarea{
+      margin-bottom: .5rem;
+      width: 100%;
+    }
+    .container-show-inputs{
+      margin-bottom: .5rem;
+      flex-direction: row;
+    }
+    .align-inputs{
+      width: 50%;
+    }
+    .wrapper-right{
+      display: flex;
+      align-items: center;
+      width: 30%;
+      font-size: 1rem;
+    }
+    .contactsLinks {
+      width: 100%;
+      margin-top: 20px;
+    }
+    .contactsLinks a{
+      width: 95%;
+      height: 5.5rem;
+    }
+    span:first-child{
+      width: 20%;
+      font-size: 35px;
+    }
+    .contactsLinks h4:first-child{
+      font-size: 1rem;
+    }
+    .contactsLinks h4:last-child{
+      white-space: wrap;
+    }
+    Button{
+      width: 12rem;
+    }
   } 
   
 `;
