@@ -55,12 +55,12 @@ export const Container = styled.section`
     background-color: var(--primary);
   }
   @media(max-width: 359px) { 
-     font-size: .8rem;
+     font-size: 1rem;
     .icon{
-      width: .9rem;
+      width: 1rem;
     }
     .job{
-      font-size: .6rem;
+      font-size: .7rem;
     }
     .line{
       width: 1rem;

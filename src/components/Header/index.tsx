@@ -11,7 +11,7 @@ export function Header() {
   return (
     <Container >
       <section>
-        <span>
+        <section className='container-menu'>
           <Link
             activeClass="active"
             to="main"
@@ -22,11 +22,11 @@ export function Header() {
             onClick={() => setOpenMenu(false)}
           ><img src={logoImg} alt="Logo"/>
           </Link>
-        </span>
-        <Nav/>
-      </section>
-      <section>
-        <RiMenu3Fill size={35} onClick={() => setMenuIsVisible(true)} className="mobile"/>
+          <Nav/>
+        </section>
+        <section>
+          <RiMenu3Fill size={35} onClick={() => setMenuIsVisible(true)} className="mobile"/>
+        </section>
       </section>
     </Container>
   )

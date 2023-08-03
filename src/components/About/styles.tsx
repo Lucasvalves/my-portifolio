@@ -8,7 +8,7 @@ export const Container = styled.section`
   height: 100vh;
   background-color: var(--black-100);
   >div{
-    border: solid 1px #9ca3af56; 
+    border: solid 1px var(--gray-200); 
     background-color: var(--black-200);
     width: 90%;
     height: 90vh;
@@ -56,6 +56,7 @@ export const Container = styled.section`
     text-align: justify;
     text-indent: 20px;
     font-size: .8rem;
+    color: var(--gray-300);
   }
   .wrapper-right >span{
     display: flex;
@@ -68,6 +69,9 @@ export const Container = styled.section`
   a:first-child{
     text-decoration: underline;
     font-size: .8rem;
+  }
+  a:first-child:hover{
+    color: var(--gray-300);
   }
   .or{
     font-size: .8rem;
@@ -255,7 +259,7 @@ export const Container = styled.section`
     }
   }
   @media(min-width: 1201px) {
-    background-color: #32c8645f; 
+    background-color: var(--black-100);
     >div{
       width: 60%;
     }

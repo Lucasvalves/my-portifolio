@@ -1,8 +1,9 @@
 import { Header } from './components/Header'
 import { Hero } from './components/Hero' 
 import { About } from './components/About'; 
-//import { Techs } from './components/Techs'; 
 import { Projects } from './components/Projects'; 
+//import { ProjectsGrid } from './components/ProjectsGrid'; 
+import { Skills } from './components/Skills'; 
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { GlobalStyle } from './styles/global';
@@ -20,8 +21,9 @@ function App() {
         <ScroolBar/>
         <Hero/>
         <About />
-        {/* <Techs/> */}
-        <Projects/> 
+        <Projects/>      
+        {/* <ProjectsGrid/>  */}
+        <Skills/> 
         <Contact/> 
         <Footer/>
       </main>

@@ -34,12 +34,12 @@ export function Nav() {
         <li>
           <Link
             activeClass="active"
-            to="techs"
+            to="skills"
             spy={true}
             smooth={true}
             offset={-70}
             duration={500}
-            >Tecnologias
+            >Habilidades
           </Link>
         </li>
         <li>

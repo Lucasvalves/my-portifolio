@@ -13,7 +13,7 @@ export function Footer() {
           <img src={gitHub} alt="gitHub" className="icon"/>
         </a>
       </span>
-      <p>© LUCAS VELOSO. ALL RIGHTS RESERVED.</p>
+      <p>Copyright © 2023 Lucas Veloso Todos os direitos reservados.</p>
     </Container>
   )
 }

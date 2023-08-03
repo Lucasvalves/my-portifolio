@@ -43,7 +43,7 @@ export const Container = styled.section<IContainerProps>`
     margin-bottom: .5rem;
   }
   li:hover{
-    color: var(--gray-200);
+    color: var(--gray-300);
   }
   
   ${({ isVisible }) => isVisible && css`

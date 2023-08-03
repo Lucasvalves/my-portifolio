@@ -22,6 +22,7 @@ export const Container = styled.section`
   }
   .title p{
     font-size: 1rem;
+    color: var(--gray-300);
   }
   .wrapper-primary{
     display: flex;
@@ -60,8 +61,8 @@ export const Container = styled.section`
   }
   .input, textarea{
     background-color: transparent;
-    color: var(--gray-200);
-    border: solid 1px var(--gray-200);
+    color: var(--gray-300);
+    border: solid 1px #9CA3AF90;
     border-radius: 5px;
   }
   textarea{
@@ -94,7 +95,7 @@ export const Container = styled.section`
   .contactsLinks a{
     display: flex;
     justify-content: center;
-    border: dashed 1px var(--gray-200);
+    border: dashed 1px #9ca3af90;
     border-radius: .5rem;
     width: 95%;
     height: 5.5rem;
@@ -123,15 +124,16 @@ export const Container = styled.section`
   }
   .contactsLinks h4:first-child:hover{
     color: #ffffffc2;
-    transition: .5s;
+    transition: .5s;;
   }
   .contactsLinks h4:last-child{
+    color: var(--gray-300);
     font-size: .8rem;
     font-weight: 200;
     text-decoration: underline;
   }
   .contactsLinks h4:last-child:hover{
-    color: #ffffffc2;
+    color: #9ca3afca;
     transition: .5s;
   }
   Button{
@@ -314,7 +316,8 @@ export const Container = styled.section`
   } 
   @media(min-width: 1201px) {
     height: 60vh;
-    background-color: #09c0f3a1;
+    background-color: var(--black-200);
+    //background-color: #09c0f3a1;
     .title{
       width: 60%;
       margin-top: 1rem;

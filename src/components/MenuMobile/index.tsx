@@ -42,13 +42,13 @@ function MenuMobile() {
         <li>
           <Link
             activeClass="active"
-            to="techs"
+            to="skills"
             spy={true}
             smooth={true}
             offset={-70}
             duration={500}
             onClick={()=>setMenuIsVisible(false)}  
-            >Tecnologias
+            >Habilidades
           </Link>
         </li>
         <li>

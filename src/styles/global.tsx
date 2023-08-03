@@ -4,8 +4,8 @@ export const GlobalStyle = createGlobalStyle`
   :root{
     --white: #ffff;
     --gray-100: #f0f0f0;
-    --gray-200: #9CA3AF;
-    --gray-300: #4E595F;
+    --gray-200: #1f1f1f;
+    --gray-300: #9ca3af;
     --primary: #0D52FF;
     --black-100: #111111;
     --black-200: #151515;
@@ -25,7 +25,7 @@ export const GlobalStyle = createGlobalStyle`
       border-radius: 10px;
     }
     ::-webkit-scrollbar-track{
-      background: var(--white);
+      background: var(--black-100);
       border-radius: 10px;
     }
   }

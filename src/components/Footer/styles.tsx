@@ -5,9 +5,10 @@ export const Container = styled.footer`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  font-size: .8rem;
+  font-size: 1rem;
+  font-weight: 400; 
   width: 100%;
-  height: 8rem;
+  height: 7rem;
   background-color: var(--black-100);
 
   .icon{

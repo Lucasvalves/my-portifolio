@@ -8,8 +8,7 @@ export function Projects() {
     {      
       image: projectRide,
       name: 'App Ride',
-      description: 'O aplicativo mede a velocidade de uma atividade como corrida de bicicleta, registrando  dados como  distância percorrida, tempo e localização.',
-      techUsed: 'Java Script',
+      description: 'O aplicativo mede a velocidade de uma atividade como corrida de bicicleta, registrando  dados como  distância percorrida, tempo e localização. Feito Java Script',
       linkGitHub: 'https://github.com/Lucasvalves/app_ride',
       page: 'https://goo.gl/maps/Cmyke6t7GYNX1uabA',
       stack: 'frontend',
@@ -17,8 +16,7 @@ export function Projects() {
     {
       image: projectMemory,
       name: 'Gerenciador de Salão',
-      description: 'O projeto tem como objetivo fazer a gerência de usuários e clientes de salão de beleza.',
-      techUsed: 'Node JS, TypeScript, React',
+      description: 'O projeto tem como objetivo fazer a gerência de usuários e clientes de salão de beleza, feito em Node JS, TypeScript, React',
       linkGitHub: 'https://github.com/Lucasvalves/sistema-de-agendamento',
       page: 'https://goo.gl/maps/Cmyke6t7GYNX1uabA',
       stack: 'frontend',
@@ -26,8 +24,7 @@ export function Projects() {
     {
       image: projectMemory,
       name: 'Jogo da Memória',
-      description: 'Projeto jogo da memoria.',
-      techUsed:'React',
+      description: 'Projeto jogo da memoria feito em React',
       linkGitHub: 'https://github.com/Lucasvalves/jogoDaMemoriaReact',
       page: 'https://goo.gl/maps/Cmyke6t7GYNX1uabA',
       stack: 'frontend',
@@ -35,8 +32,7 @@ export function Projects() {
     {
       image: '',
       name: 'SysCopa',
-      description: 'Projeto realiza o inserção, seleção, atualização e deleção de dados existentes uma Copa do Mundo como nome de seleções, árbitros, técnicos e fases.',
-      techUsed: 'Mysql, Python',
+      description: 'Projeto realiza o inserção, seleção, atualização e deleção de dados existentes uma Copa do Mundo como nome de seleções, árbitros, técnicos e fases. Feito em Mysql, Python',
       linkGitHub: 'https://github.com/Lucasvalves/sys_copa',
       page: 'https://goo.gl/maps/Cmyke6t7GYNX1uabA',
       stack: 'backend',     
@@ -48,38 +44,35 @@ export function Projects() {
       <h2>Projetos</h2>
       <div>
         {projects.map((projetc, key)=>(
-                <div key={key} className='show-projetcs'>
-                  <div className='container-img'>
-                    {projetc.stack == 'backend' ? 
-                      <p>Projeto de backend</p> : 
-                      <img src={projetc.image} 
-                    />}
+          <div key={key} className='show-projetcs'>
+            <div className='container-img'>
+              {projetc.stack == 'backend' ? 
+                <p>Projeto de backend</p> : 
+                <img src={projetc.image} alt={projetc.name} 
+              />}
+            </div>
+            <div className='container-data'>
+              <div className='align-items'>
+                <h4>{projetc.name}</h4>
+                {projetc.stack != 'backend' ?              
+                  <div className='links'>
+                    <a href={projetc.linkGitHub}target='_blank' title='Ver Código'>
+                      <AiFillGithub size='20'/>
+                    </a>
+                    <a href={projetc.page}target='_blank' title='Ver Projeto'>
+                      <AiOutlineLink size='20'/> 
+                    </a> 
                   </div>
-                  <div className='container-data'>
-                    <h4>{projetc.name}</h4>
-                    <p>{projetc.description}</p>
-                    <div className='align-items'>
-                      <div className='links'>
-                        {projetc.stack != 'backend' ? 
-                          <div>
-                            <a href={projetc.linkGitHub}target='_blank' title='Ver Código'>
-                              <AiFillGithub size='20'/>
-                            </a>
-                            <a href={projetc.page}target='_blank' title='Ver Projeto'>
-                              <AiOutlineLink size='20'/> 
-                            </a> 
-                          </div>
-                        :
-                          <div>
-                            <a href={projetc.linkGitHub}target='_blank' title='Ver Código'>
-                              <AiFillGithub size='20'/>
-                            </a>
-                          </div>}
-                      </div>
-                      <p>{projetc.techUsed}</p>
-                    </div>
-                  </div>
-                </div>   
+                :
+                  <div>
+                    <a href={projetc.linkGitHub}target='_blank' title='Ver Código'>
+                      <AiFillGithub size='20'/>
+                    </a>
+                  </div>}
+              </div>
+              <p>{projetc.description}</p>
+            </div>
+          </div>   
         ))}
       </div>
     </Container>

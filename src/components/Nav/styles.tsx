@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const Container = styled.nav`
   width: 100rem;
-
     >ul {  display: flex;
         gap: 2rem;
         justify-content: end;
@@ -13,7 +12,7 @@ export const Container = styled.nav`
         cursor: pointer;
       }
       li> .active {
-        color: var(--gray-200);
+        color: var(--gray-300);
       }
       
       a {
@@ -26,8 +25,8 @@ export const Container = styled.nav`
           position: absolute;
           width: 0%;
           height: 1px;
-          background: var(--gray-200);
-          transition: .3s;
+          background-image: linear-gradient(90deg,  rgba(9,9,121,1) 0%, #0D52FF 50%, rgba(0,212,255,1) 100%);
+          transition: .5s;
         }
 
         &:hover {
