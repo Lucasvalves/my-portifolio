@@ -1,4 +1,4 @@
-import { Container } from "./styles";
+import { Container } from './styles';
 import js from '../../assets/js.svg';
 import html from '../../assets/html.svg';
 import css from '../../assets/css.svg';
@@ -11,70 +11,75 @@ import sqlServer from '../../assets/sqlServer.svg';
 import mongoDB from '../../assets/mongoDB.svg';
 import git from '../../assets/git.svg';
 
-export function Skills() {
 
+
+export function Skills() {
   const skills = [
     {
       icon: js,
-      name: 'JS'
+      name: 'JS',
     },
     {
       icon: html,
-      name: 'HTML'
+      name: 'HTML',
     },
     {
-      icon: css
-      ,
-      name: 'CSS'
+      icon: css,
+      name: 'CSS',
     },
     {
       icon: react,
-      name:'React'
+      name: 'React',
     },
     {
       icon: node,
-      name:'Node',
+      name: 'Node',
     },
     {
       icon: ts,
-      name:'TS'
+      name: 'TS',
     },
     {
       icon: python,
-      name:'Python'
+      name: 'Python',
     },
     {
       icon: mySQL,
-      name:'MySQL'
+      name: 'MySQL',
     },
     {
       icon: sqlServer,
-      name:'SQL Server'
+      name: 'SQL Server',
     },
     {
       icon: mongoDB,
-      name:'Mongo DB'
+      name: 'Mongo DB',
     },
     {
       icon: git,
-      name:'Git'
+      name: 'Git',
     },
-
-  ]
+    {
+      icon: git,
+      name: 'Git',
+    },
+  ];
   return (
     <Container id="skills">
       <div className="title">
         <h2>Habilidades</h2>
-        <p>Aqui estão algumas habilidades que possuo</p>
+        <p>Aqui estão algumas habilidades que possuo.</p>
       </div>
       <div className="show-skills">
-          {skills.map((tech, key)=>(
-              <div key={key}>
-                <img src={tech.icon} alt={tech.name} />
-                <span>{tech.name}</span>
-              </div>
-          ))}
+        {skills.map((tech, key) => {
+          return(
+            <div key={key}>
+              <img src={tech.icon} alt={tech.name} />
+              <span>{tech.name}</span>
+            </div>
+          )
+        })}
       </div>
     </Container>
-  )
+  );
 }

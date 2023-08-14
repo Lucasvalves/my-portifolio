@@ -15,7 +15,7 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1",
     "react-scroll": "^1.8.9",
-    "styled-components": "^6.0.2",
+    "styled-components": "^6.0.7",
     "typeit-react": "^2.6.4"
   },
   "devDependencies": {
@@ -26,9 +26,12 @@
     "@typescript-eslint/parser": "^5.61.0",
     "@vitejs/plugin-react-swc": "^3.3.2",
     "eslint": "^8.44.0",
+    "eslint-config": "^0.2.1",
+    "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.1",
     "jest-styled-components": "^7.1.1",
+    "prettier": "^3.0.1",
     "typescript": "^5.0.2",
     "vite": "^4.4.0"
   }

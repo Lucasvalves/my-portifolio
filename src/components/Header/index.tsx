@@ -9,9 +9,9 @@ export function Header() {
   const { setMenuIsVisible } = useAppContext();
   const { setOpenMenu } = useAppContext();
   return (
-    <Container >
+    <Container>
       <section>
-        <section className='container-menu'>
+        <section className="container-menu">
           <Link
             activeClass="active"
             to="main"
@@ -20,14 +20,19 @@ export function Header() {
             offset={-70}
             duration={500}
             onClick={() => setOpenMenu(false)}
-          ><img src={logoImg} alt="Logo"/>
+          >
+            <img src={logoImg} alt="Logo" />
           </Link>
-          <Nav/>
+          <Nav />
         </section>
         <section>
-          <RiMenu3Fill size={35} onClick={() => setMenuIsVisible(true)} className="mobile"/>
+          <RiMenu3Fill
+            size={35}
+            onClick={() => setMenuIsVisible(true)}
+            className="mobile"
+          />
         </section>
       </section>
     </Container>
-  )
+  );
 }

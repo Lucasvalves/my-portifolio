@@ -6,14 +6,17 @@ export function Footer() {
   return (
     <Container>
       <span>
-        <a href="https://www.linkedin.com/in/lucasvelosoalves/" target='blank'>
-          <img src={linkedln} alt="linkedin" className="icon"/>
+        <a href="https://www.linkedin.com/in/lucasvelosoalves/" target="blank">
+          <img src={linkedln} alt="linkedin" className="icon" />
         </a>
-        <a href="https://github.com/Lucasvalves" target='blank'> 
-          <img src={gitHub} alt="gitHub" className="icon"/>
+        <a href="https://github.com/Lucasvalves" target="blank">
+          <img src={gitHub} alt="gitHub" className="icon" />
         </a>
       </span>
-      <p>Copyright © 2023 Lucas Veloso Todos os direitos reservados.</p>
+      <p>
+        Copyright © {new Date().getFullYear()} Lucas Veloso Todos os direitos
+        reservados.
+      </p>
     </Container>
-  )
+  );
 }

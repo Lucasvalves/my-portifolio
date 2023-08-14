@@ -1,5 +1,5 @@
-import { useContext } from 'react'
-import { AppContext } from '../contexts/AppContext'
+import { useContext } from 'react';
+import { AppContext } from '../contexts/AppContext';
 
 export default function useAppContext() {
   const context = useContext(AppContext);
@@ -8,5 +8,5 @@ export default function useAppContext() {
     throw new Error('Não está dentro do contexto');
   }
 
-  return context
+  return context;
 }

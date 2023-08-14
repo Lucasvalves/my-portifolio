@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const Container = styled.span`
-  .arrow-on{
-    border:none;
+  .arrow-on {
+    border: none;
     position: fixed;
     display: flex;
     align-items: center;
@@ -17,12 +17,9 @@ export const Container = styled.span`
     right: 1rem;
     bottom: 1rem;
     z-index: 2;
-    display: none; 
+    display: none;
   }
-  .arrow-off{
+  .arrow-off {
     display: flex;
   }
-
 `;
-
-
