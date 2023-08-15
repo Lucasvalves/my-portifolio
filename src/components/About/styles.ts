@@ -7,6 +7,7 @@ export const Container = styled.section`
   width: 100%;
   height: 100vh;
   background-color: var(--black-100);
+
   > div {
     border: solid 1px var(--gray-200);
     background-color: var(--black-200);
@@ -89,7 +90,7 @@ export const Container = styled.section`
       width: 96%;
     }
     .wrapper-left {
-      height: 40%;
+      height: 45%;
     }
     .wrapper-right {
       height: 60%;
@@ -126,7 +127,6 @@ export const Container = styled.section`
       padding-bottom: 22px;
       width: 100%;
       height: 100%;
-      border: 10px solid var(--primary);
       background-color: var(--primary);
     }
     .frame img {
@@ -159,22 +159,20 @@ export const Container = styled.section`
   }
   @media (min-width: 768px) and (max-width: 1023px) {
     height: 80vh;
-    background-color: blue;
     > div {
       width: 80%;
       gap: 0.1rem;
       display: flex;
       flex-direction: row;
-      height: 60%;
+      height: 55%;
     }
     .wrapper-left {
       height: 100%;
       width: 50%;
     }
     .frame {
-      width: 20rem;
+      width: 18rem;
       height: 50%;
-      border: 10px solid var(--primary);
     }
     .wrapper-right {
       width: 50%;
@@ -217,16 +215,13 @@ export const Container = styled.section`
     .frame {
       height: 60%;
       margin-left: 1.5rem;
-      margin-top: 40px;
       width: 80%;
-      border: 10px solid var(--primary);
     }
     .frame img {
       width: 100%;
       height: 100%;
       margin-top: -35px;
       margin-left: calc(0% - 35px);
-      border-radius: 2px;
     }
     .wrapper-right {
       width: 50%;
@@ -261,7 +256,6 @@ export const Container = styled.section`
     }
   }
   @media (min-width: 1201px) {
-    background-color: var(--black-100);
     > div {
       width: 60%;
     }

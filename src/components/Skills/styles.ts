@@ -73,7 +73,6 @@ export const Container = styled.section`
     }
   }
   @media (min-width: 1024px) {
-    background-color: #661aff49;
     height: 80vh;
     .title {
       width: 80%;

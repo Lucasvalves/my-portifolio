@@ -99,7 +99,6 @@ export const Container = styled.section`
       display: flex;
       justify-content: center;
       align-items: center;
-      border: 1px solid blue;
     }
   }
   @media (min-width: 1201px) {
