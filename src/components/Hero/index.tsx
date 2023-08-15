@@ -1,5 +1,5 @@
 import { Container } from './styles';
-import whatsapp from '../../assets/Whatsapp.svg';
+import whatsapp from '../../assets/whatsapp.svg';
 import linkedln from '../../assets/linkedln.svg';
 import gitHub from '../../assets/gitHub.svg';
 import TypeIt from 'typeit-react';
