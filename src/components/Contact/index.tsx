@@ -34,10 +34,10 @@ export function Contact() {
           setSuccess(true);
           setLoading(false);
         },
-        (error) => {
+        (err) => {
           setError(true);
           setLoading(false);
-          console.log(error);
+          console.log(err, error);
         },
       );
   };

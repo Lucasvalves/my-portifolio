@@ -29,7 +29,7 @@ export function Projects() {
       name: 'Jogo da Memória',
       description: 'Projeto jogo da memoria feito em React',
       linkGitHub: 'https://github.com/Lucasvalves/jogoDaMemoriaReact',
-      page: 'https://goo.gl/maps/Cmyke6t7GYNX1uabA',
+      page: 'https://jogo-da-memoria-react-eight.vercel.app/',
       stack: 'frontend',
     },
     {
