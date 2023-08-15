@@ -6,7 +6,7 @@ import react from '../../assets/react.svg';
 import node from '../../assets/node.svg';
 import ts from '../../assets/ts.svg';
 import python from '../../assets/python.svg';
-import mySQL from '../../assets/mySQL.svg';
+import mySQL from '../../assets/mysql.svg';
 import sqlServer from '../../assets/sqlServer.svg';
 import mongoDB from '../../assets/mongoDB.svg';
 import git from '../../assets/git.svg';
