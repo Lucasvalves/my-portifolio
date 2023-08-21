@@ -6,7 +6,7 @@ export const Container = styled.header`
   justify-content: center;
   width: 100%;
   top: 0;
-  background: var(--black-100);
+  background: var(--primary);
   color: var(--gray-100);
   padding: 24px 0;
   position: fixed;

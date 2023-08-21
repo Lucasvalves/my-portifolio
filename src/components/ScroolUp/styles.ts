@@ -10,7 +10,7 @@ export const Container = styled.span`
     font-size: 1.5rem;
     width: 2.5rem;
     height: 2.5rem;
-    background-color: var(--primary);
+    background-color: var(--blue);
     color: var(--white);
     border-radius: 5px;
     cursor: pointer;

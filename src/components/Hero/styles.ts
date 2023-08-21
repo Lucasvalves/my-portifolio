@@ -7,7 +7,7 @@ export const Container = styled.section`
   font-size: 1.5rem;
   width: 100%;
   height: 100vh;
-  background-color: var(--black-100);
+  background-color: var(--primary);
 
   .welcome {
     display: block;
@@ -27,7 +27,7 @@ export const Container = styled.section`
     -webkit-text-fill-color: transparent;
   }
   .lastName {
-    color: var(--primary);
+    color: var(--blue);
     font-weight: 400;
     margin-left: 0.5rem;
   }
@@ -57,7 +57,7 @@ export const Container = styled.section`
     width: 1.5rem;
     height: 0.2rem;
     border-radius: 1rem;
-    background-color: var(--primary);
+    background-color: var(--blue);
   }
   @media (max-width: 359px) {
     font-size: 1rem;

@@ -1,19 +1,22 @@
 import styled from 'styled-components';
 
 export const Container = styled.section`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  height: 100vh;
-  background-color: var(--black-200);
+  padding: 72px 20px;
+  background-color: var(--secundary);
+  .grid-layout {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
   .title {
     display: flex;
     justify-content: center;
     flex-direction: column;
     width: 90%;
-    margin-top: 1rem;
+    margin-top: 10px;
   }
   .title h2 {
     font-size: 1.25rem;
@@ -108,6 +111,7 @@ export const Container = styled.section`
     align-items: center;
     width: 15%;
     font-size: 30px;
+    color: red;
   }
   span:first-child:hover {
     transform: scale(1.1);
@@ -141,13 +145,14 @@ export const Container = styled.section`
     width: 60%;
     height: 2rem;
     font-size: 0.8rem;
+    margin: 10px 0 20px 0;
     > svg {
       margin-bottom: 0;
     }
   }
   @media (max-width: 360px) {
     .title {
-      margin-top: 0px;
+      margin-top: -30px;
     }
     .title p,
     .wrapper-left {
@@ -180,6 +185,13 @@ export const Container = styled.section`
       height: 4rem;
       margin-bottom: 10px;
     }
+    form span{
+      width: 100%;
+      margin: auto;
+    }
+    Button {
+      width: 100%;
+    }
   }
   @media (min-width: 480px) and (max-width: 767px) {
     .container-show-textarea {
@@ -199,9 +211,11 @@ export const Container = styled.section`
     .wrapper-right {
       font-size: 1rem;
     }
+    Button {
+      width: 13rem;
+    }
   }
   @media (min-width: 768px) and (max-width: 1400px) {
-    height: 50vh;
     .title {
       width: 80%;
     }
@@ -215,7 +229,7 @@ export const Container = styled.section`
       gap: 3%;
     }
     .wrapper-left {
-      width: 60%;
+      width: 55%;
     }
     .container-show-textarea {
       margin-bottom: 0.5rem;
@@ -231,7 +245,7 @@ export const Container = styled.section`
     .wrapper-right {
       display: flex;
       align-items: center;
-      width: 40%;
+      width: 45%;
       font-size: 1rem;
       margin-top: 3rem;
     }
@@ -248,7 +262,7 @@ export const Container = styled.section`
       font-size: 35px;
     }
     Button {
-      width: 12rem;
+      width: 10rem;
     }
     .contactsLinks h4:first-child,
     .contactsLinks h4:last-child,
@@ -258,18 +272,15 @@ export const Container = styled.section`
   }
 
   @media (min-width: 1201px) {
-    height: 60vh;
-    background-color: var(--black-200);
     .title {
-      width: 60%;
+      width: 90%;
     }
     .title h2 {
       font-size: 1.953rem;
     }
     .wrapper-primary {
       flex-direction: row;
-      width: 60%;
-      height: 60%;
+      width: 90%;
       gap: 5%;
     }
     .wrapper-left {
@@ -287,8 +298,6 @@ export const Container = styled.section`
       width: 50%;
     }
     .wrapper-right {
-      display: flex;
-      align-items: center;
       width: 30%;
       font-size: 1rem;
     }
@@ -297,7 +306,7 @@ export const Container = styled.section`
       margin-top: 20px;
     }
     .contactsLinks a {
-      width: 95%;
+      width: 100%;
       height: 5.5rem;
     }
     span:first-child {

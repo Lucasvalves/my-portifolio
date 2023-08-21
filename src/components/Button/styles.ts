@@ -8,7 +8,7 @@ export const Container = styled.span`
     gap: 6px;
     border: solid 1px #ffffffe9;
     background-color: var(--white);
-    color: var(--black-200);
+    color: var(--secundary);
     margin-top: 0.5rem;
     padding: 0.4rem;
     font-size: 0.8rem;

@@ -1,20 +1,23 @@
 import styled from 'styled-components';
 
 export const Container = styled.section`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  background-color: var(--black-200);
-  > h2 {
+  padding: 72px 20px;
+  background-color: var(--secundary);
+  .grid-layout {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+  }
+  .grid-layout > h2 {
     width: 90%;
     font-size: 1.25rem;
     font-weight: 600;
     white-space: nowrap;
     margin-top: 10px;
+    margin: 0 auto;
+    padding: 80px 0 5px 0;
   }
-  > div {
+  .grid-layout > div {
     width: 90%;
     display: flex;
     justify-content: center;
@@ -23,6 +26,7 @@ export const Container = styled.section`
     gap: 20px;
     margin-top: 10px;
     margin-bottom: 5%;
+    margin: 0 auto;
   }
   .show-projetcs {
     height: 300px;
@@ -80,36 +84,33 @@ export const Container = styled.section`
   }
 
   @media (min-width: 768px) and (max-width: 1023px) {
-    > h2 {
-      width: 80%;
+    .grid-layout > h2 {
+      width: 78%;
       font-size: 1.953rem;
     }
-    > div {
-      width: 80%;
+    .grid-layout > div {
+      width: 78%;
     }
   }
   @media (min-width: 1024px) and (max-width: 1200px) {
-    height: 80vh;
-    > h2 {
-      width: 80%;
+    //height: 100vh;
+    .grid-layout > h2 {
+      width: 78%;
       font-size: 1.953rem;
     }
-    > div {
-      width: 80%;
+    .grid-layout > div {
+      width: 78%;
       display: flex;
       justify-content: center;
       align-items: center;
     }
   }
   @media (min-width: 1201px) {
-    background-color: var(--black-200);
-    height: 60vh;
-    > h2 {
-      width: 60%;
+    background-color: var(--secundary);
+    .grid-layout > h2 {
       font-size: 1.953rem;
     }
-    > div {
-      width: 60%;
+    .grid-layout > div {
       flex-wrap: nowrap;
     }
   }
