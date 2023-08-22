@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 import useAppContext from '../../hook/useAppContext';
 import { useEffect } from 'react';
 
-export function ScroolBar() {
+export const ScroolBar = () => {
   const { isScrolled, setIsScrolled } = useAppContext();
 
   useEffect(() => {

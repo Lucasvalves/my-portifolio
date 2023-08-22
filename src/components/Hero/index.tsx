@@ -4,7 +4,7 @@ import linkedln from '../../assets/linkedln.svg';
 import gitHub from '../../assets/gitHub.svg';
 import TypeIt from 'typeit-react';
 
-export function Hero() {
+export const Hero = () => {
   return (
     <Container id="hero">
       <div>

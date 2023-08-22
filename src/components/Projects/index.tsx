@@ -1,14 +1,39 @@
 import { Container } from './styles';
 import { AiFillGithub, AiOutlineLink } from 'react-icons/ai';
-import { projects } from '../../utils/constants';
-export function Projects() {
+import {
+  projects,
+  containerVariants,
+  projectsitemVariants,
+} from '../../utils/constants';
+import { motion } from 'framer-motion';
+
+export const Projects = () => {
   return (
     <Container id="projects">
       <div className="grid-layout">
-        <h2>Projetos</h2>
-        <div>
+        <motion.h2
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5, duration: 2 }}
+        >
+          Projetos
+        </motion.h2>
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={containerVariants}
+        >
           {projects.map((projetc, key) => (
-            <div key={key} className="show-projetcs">
+            <motion.div
+              key={key}
+              className="show-projetcs"
+              initial="initial"
+              whileInView="animate"
+              viewport={{
+                once: true,
+              }}
+              variants={projectsitemVariants}
+            >
               <div className="container-img">
                 {projetc.stack == 'backend' ? (
                   <p className="back">Projeto Backend</p>
@@ -50,10 +75,10 @@ export function Projects() {
                 </div>
                 <p>{projetc.description}</p>
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </Container>
   );
-}
+};

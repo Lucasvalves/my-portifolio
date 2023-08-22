@@ -11,10 +11,12 @@ export const Container = styled.footer`
   .icon {
     width: 1.6rem;
     margin-left: 0.8rem;
-    margin-bottom: 0.3rem;
     @media (max-width: 330px) {
       width: 1.4rem;
     }
+  }
+  p{
+    color: var(--white);
   }
   .icon:hover {
     transform: scale(1.1);

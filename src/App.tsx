@@ -9,22 +9,25 @@ import { GlobalStyle } from './styles/global';
 import { MenuMobile } from './components/MenuMobile';
 import { ScroolBar } from './components/ScroolUp';
 import AppProvider from './contexts/AppProvider';
+import { LayoutGroup  } from 'framer-motion';
 
 function App() {
   return (
     <AppProvider>
-      <main id="main">
-        <GlobalStyle />
-        <MenuMobile />
-        <Header />
-        <ScroolBar />
-        <Hero />
-        <About />
-        <Projects />
-        <Skills />
-        <Contact />
-        <Footer />
-      </main>
+      <LayoutGroup>
+        <main id="main">
+          <GlobalStyle />
+          <MenuMobile />
+          <Header />
+          <ScroolBar />
+          <Hero />
+          <About />
+          <Projects />
+          <Skills />
+          <Contact />
+          <Footer />
+        </main>
+      </LayoutGroup>
     </AppProvider>
   );
 }

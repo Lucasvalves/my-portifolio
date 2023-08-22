@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import useAppContext from '../../hook/useAppContext';
 import { Link } from 'react-scroll';
 
-function MenuMobile() {
+const MenuMobile = () => {
   const { menuIsVisible, setMenuIsVisible } = useAppContext();
 
   useEffect(() => {

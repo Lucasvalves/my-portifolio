@@ -66,6 +66,7 @@ export const Container = styled.section`
   a:first-child {
     text-decoration: underline;
     font-size: 0.8rem;
+    color: var(--gray-100);
   }
   a:first-child:hover {
     color: var(--gray-300);
@@ -186,8 +187,8 @@ export const Container = styled.section`
     .frame img {
       width: 100%;
       height: 100%;
-      margin-top: -35px;
-      margin-left: calc(0% - 35px);
+      margin-top: -25px;
+      margin-left: calc(0% - 25px);
     }
     .wrapper-right {
       width: 49%;

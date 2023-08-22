@@ -3,11 +3,12 @@ import { HiCheckCircle } from 'react-icons/hi2';
 import { FaSpinner } from 'react-icons/fa';
 import { FormEvent, useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import Button from '../Button';
+import { Button } from '../Button';
 import useAppContext from '../../hook/useAppContext';
 import { contacts } from '../../utils/constants';
+import { motion } from 'framer-motion';
 
-export function Contact() {
+export const Contact = () => {
   const { loading, setLoading, success, setSuccess, error, setError } =
     useAppContext();
   const form = useRef<HTMLFormElement | null>(null);
@@ -42,14 +43,29 @@ export function Contact() {
     <Container id="contact">
       <div className="grid-layout">
         <div className="title">
-          <h2>Entre em Contato</h2>
-          <p>
+          <motion.h2
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1, duration: 1 }}
+          >
+            Entre em Contato
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.5, duration: 1.5 }}
+          >
             Entre em contato por formulário ou WhatsApp, com certeza irei poder
             te ajudar.
-          </p>
+          </motion.p>
         </div>
         <div className="wrapper-primary">
-          <div className="wrapper-left">
+          <motion.div
+            className="wrapper-left"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{delay: 2, duration: 2 }}
+          >
             <form ref={form} onSubmit={sendEmail}>
               <div className="container-show-textarea">
                 <label htmlFor="message">Mensagem:</label>
@@ -84,14 +100,21 @@ export function Contact() {
                 Enviar mensagem
               </Button>
             </form>
-          </div>
-          <div className="wrapper-right">
+          </motion.div>
+          <motion.div className="wrapper-right"
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{delay: 2.5, duration: 2 }}>
             <div className="contactsLinks">
               {contacts.map((contact, index) => (
                 <div key={index}>
                   <a href={contact.link} target="blank">
                     <span>
-                      <img src={contact.image} alt={contact.name} />
+                      <img
+                        src={contact.image}
+                        alt={contact.name}
+                        className="img"
+                      />
                     </span>
                     <span>
                       <h4>{contact.name}</h4>
@@ -101,9 +124,9 @@ export function Contact() {
                 </div>
               ))}
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </Container>
   );
-}
+};

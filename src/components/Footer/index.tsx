@@ -2,7 +2,7 @@ import { Container } from './styles';
 import gitHub from '../../assets/gitHub.svg';
 import linkedln from '../../assets/linkedln.svg';
 
-export function Footer() {
+export const Footer = () =>{
   return (
     <Container>
       <span>

@@ -1,19 +1,21 @@
 import styled from 'styled-components';
 
 export const Container = styled.header`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
   top: 0;
   background: var(--primary);
   color: var(--gray-100);
   padding: 24px 0;
+  width: 100%;
   position: fixed;
-  > section {
+  .wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+  .wrapper > div {
     display: flex;
+    width: 90%;
     gap: 4rem;
-    width: 60%;
+    margin: 0 auto;
     &:last-child {
       gap: 1rem;
     }
@@ -23,7 +25,7 @@ export const Container = styled.header`
     display: flex;
     align-items: center;
     justify-content: center;
-    /* padding: 10px 0; */
+    margin: 0 auto;
   }
   .container-menu a {
     cursor: pointer;
@@ -34,17 +36,31 @@ export const Container = styled.header`
       width: 50px;
     }
   }
-  > section section:last-child {
+  .container-menu-mobile {
     display: flex;
     align-items: center;
     justify-content: center;
+    display: none;
   }
   .mobile {
     display: none;
   }
+  @media (max-width: 1201px) {
+    .wrapper >div {
+      width: 80%;
+
+    }
+  }
   @media (max-width: 990px) {
     > section {
       width: 80%;
+    }
+    .wrapper >div {
+      width: 95%;
+
+    }
+    .container-menu-mobile {
+      display: initial;
     }
     .mobile {
       display: initial;

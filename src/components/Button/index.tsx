@@ -6,7 +6,7 @@ type Props = {
   disabled?: boolean;
   children?: string | string[] | JSX.Element | JSX.Element[] | ReactNode;
 };
-export default function Button({ children }: Props) {
+export const Button = ({ children }: Props) => {
   return (
     <Container>
       <button>{children}</button>

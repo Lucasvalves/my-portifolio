@@ -94,14 +94,15 @@ export const Container = styled.section`
     width: 100%;
   }
   .contactsLinks {
-    width: 80%;
+    width: 100%;
   }
   .contactsLinks a {
     display: flex;
     justify-content: center;
+    gap: 20px;
     border: dashed 1px #9ca3af90;
     border-radius: 0.5rem;
-    width: 95%;
+    width: 100%;
     height: 5.5rem;
     margin-bottom: 20px;
   }
@@ -109,9 +110,12 @@ export const Container = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 15%;
-    font-size: 30px;
-    color: red;
+    width: 30px;
+    font-size: 40px;
+  }
+  .img {
+    width: 30px;
+    margin-left: 10px;
   }
   span:first-child:hover {
     transform: scale(1.1);
@@ -185,9 +189,15 @@ export const Container = styled.section`
       height: 4rem;
       margin-bottom: 10px;
     }
-    form span{
+    form span {
       width: 100%;
       margin: auto;
+    }
+    .img {
+      width: 20px;
+    }
+    .contactsLinks h4:last-child {
+      font-size: 0.7rem;
     }
     Button {
       width: 100%;
@@ -256,6 +266,7 @@ export const Container = styled.section`
     .contactsLinks a {
       width: 100%;
       height: 5.5rem;
+      gap: 10px;
     }
     span:first-child {
       width: 20%;
@@ -308,6 +319,7 @@ export const Container = styled.section`
     .contactsLinks a {
       width: 100%;
       height: 5.5rem;
+      gap: 10px;
     }
     span:first-child {
       width: 20%;

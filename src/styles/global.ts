@@ -32,7 +32,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     background: var(--primary);
-    color:  var(--gray-100);
+    color:  var(--white);
     font-family: 'Poppins', sans-serif;
   }
 
