@@ -1,38 +1,44 @@
 import { Container } from './styles';
 import { AiFillGithub, AiOutlineLink } from 'react-icons/ai';
+import { projects } from '../../utils/constants';
 import {
-  projects,
   containerVariants,
-  projectsitemVariants,
-} from '../../utils/constants';
+  itemVariantsTitles,
+  itemsVariantsEixoX,
+} from '../../utils/constsAnimates';
 import { motion } from 'framer-motion';
 
 export const Projects = () => {
   return (
     <Container id="projects">
-      <div className="grid-layout">
-        <motion.h2
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.5, duration: 2 }}
-        >
-          Projetos
-        </motion.h2>
-        <motion.div
-          initial="hidden"
-          animate="visible"
-          variants={containerVariants}
-        >
+      <motion.div
+        className="grid-layout"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{
+          once: true,
+        }}
+        variants={containerVariants}
+        
+      >
+        <motion.h2 
+
+        variants={itemVariantsTitles}
+        transition= {{
+
+          duration: 2,
+        }}>Projetos</motion.h2>
+        
+        <div>
           {projects.map((projetc, key) => (
             <motion.div
               key={key}
               className="show-projetcs"
-              initial="initial"
-              whileInView="animate"
-              viewport={{
-                once: true,
+              variants={itemsVariantsEixoX}
+              transition= {{
+
+                duration: 2,
               }}
-              variants={projectsitemVariants}
             >
               <div className="container-img">
                 {projetc.stack == 'backend' ? (
@@ -77,8 +83,8 @@ export const Projects = () => {
               </div>
             </motion.div>
           ))}
-        </motion.div>
-      </div>
+        </div>
+      </motion.div>
     </Container>
   );
 };

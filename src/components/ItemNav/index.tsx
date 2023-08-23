@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { itemVariants } from '../../utils/constants';
+import { itemsVariantsEixoX} from '../../utils/constsAnimates';
 import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
 type Props = {
@@ -9,7 +9,12 @@ type Props = {
 };
 export const ItemNav = ({ children, to }: Props) => {
   return (
-    <motion.li variants={itemVariants}>
+    <motion.li variants={itemsVariantsEixoX}
+    transition= {{
+
+      duration: 1,
+    }}
+    >
       <Link
         activeClass="active"
         to={to}

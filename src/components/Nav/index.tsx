@@ -1,5 +1,5 @@
 import { Container } from './styles';
-import { containerVariants } from '../../utils/constants';
+import { containerVariantsNav } from '../../utils/constsAnimates';
 import { motion } from 'framer-motion';
 
 import { ItemNav } from '../../components/ItemNav';
@@ -12,7 +12,7 @@ export const Nav = () => {
       <motion.ul
         initial="hidden"
         animate="visible"
-        variants={containerVariants}
+        variants={containerVariantsNav}
       >
         <ItemNav to="hero">
           Home

@@ -1,31 +1,36 @@
 import { Container } from './styles';
 import { skills } from '../../utils/constants';
-import {itemVariants } from '../../utils/constants';
+import {
+  itemsVariantsEixoY,
+  containerVariants,
+  itemVariantsTitles,
+} from '../../utils/constsAnimates';
 import { motion } from 'framer-motion';
 
 export const Skills = () => {
-
   return (
     <Container id="skills">
       <div className="grid-layout">
         <motion.div
           className="title"
-          variants={itemVariants}
-          initial="initial"
-          whileInView="animate"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
           viewport={{
             once: true,
           }}
         >
-          <h2>Habilidades</h2>
-          <p>Aqui estão algumas habilidades que possuo.</p>
+          <motion.h2 variants={itemVariantsTitles}>Habilidades</motion.h2>
+          <motion.p variants={itemVariantsTitles}>
+            Aqui estão algumas habilidades que possuo.
+          </motion.p>
         </motion.div>
         <div className="show-skills">
           {skills.map((tech, index) => {
             return (
               <motion.div
                 key={index}
-                variants={itemVariants}
+                variants={itemsVariantsEixoY}
                 initial="initial"
                 whileInView="animate"
                 viewport={{
