@@ -1,56 +1,66 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle, css } from 'styled-components';
+import light from './themes/light';
+import dark from './themes/dark';
+
+export default { light, dark };
 
 export const GlobalStyle = createGlobalStyle`
-  :root{
-    --white: #ffff;
-    --gray-100: #f0f0f0;
-    --gray-200: #1f1f1f;
-    --gray-300: #9ca3af;
-    --blue: #0D52FF;
-    --primary: #111111;
-    --secundary: #151515;
-  }
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 
-    ::-webkit-scrollbar {
-      width: 7px;
-      height: 5px;
-      transition:.3s;
-    }
-    ::-webkit-scrollbar-thumb {
-      background: var(--blue);
-      border-radius: 10px;
-    }
-    ::-webkit-scrollbar-track{
-      background: var(--primary);
-      border-radius: 10px;
-    }
-  }
+   :root {
+     --white: #ffff;
+     --gray-100: #f0f0f0;
+     --gray-200: #1f1f1f;
+     --gray-300: #9ca3af;
+     --blue: #0d52ff;
+     /* --primary: #111111;
+    --secundary: #151515; */
+   }
+   * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
 
-  body {
-    background: var(--primary);
-    color:  var(--white);
-    font-family: 'Poppins', sans-serif;
-  }
+     ::-webkit-scrollbar {
+       width: 7px;
+       height: 5px;
+       transition: 0.3s;
+     }
+     ::-webkit-scrollbar-thumb {
+       background: var(--blue);
+       border-radius: 10px;
+     }
+     ::-webkit-scrollbar-track {
+       background: var(--primary);
+       border-radius: 10px;
+     }
+   }
+   body {
+     font-family: 'Poppins', sans-serif;
+   }
+   button {
+     cursor: pointer;
+   }
 
-  button {
-    cursor: pointer;
-  }
+   a {
+     color: inherit;
+     text-decoration: none;
+   }
 
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
-  
-  ul{
-    list-style:none;
-  }
+   ul {
+     list-style: none;
+   }
 
-  img {
-    width: 100%;
-    max-width: 100%;
-  }
+   img {
+     width: 100%;
+     max-width: 100%;
+   }
+ ${({ theme }) => css`
+   //background-color: ${theme.colors.primary};
+
+   body {
+     background-color: ${theme.colors.primary};
+     color: ${theme.colors.text};
+   }
+ `}
+
 `;

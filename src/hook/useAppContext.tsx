@@ -1,8 +1,8 @@
 import { useContext } from 'react';
-import { AppContext } from '../contexts/AppContext';
+import { MainContext } from '../contexts/MainContext';
 
-export default function useAppContext() {
-  const context = useContext(AppContext);
+export default function useMainProviderContext() {
+  const context = useContext(MainContext);
 
   if (context === undefined) {
     throw new Error('Não está dentro do contexto');

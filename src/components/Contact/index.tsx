@@ -48,11 +48,13 @@ export const Contact = () => {
           >
             <Form />
           </motion.div>
-          <motion.div className="wrapper-right" variants={itemsVariantsEixoX}
-              transition= {{
-
-                duration: 1,
-              }}>
+          <motion.div
+            className="wrapper-right"
+            variants={itemsVariantsEixoX}
+            transition={{
+              duration: 1,
+            }}
+          >
             <div className="contactsLinks">
               {contacts.map((contact, index) => (
                 <div key={index}>

@@ -1,8 +1,9 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Container = styled.header`
+ ${({ theme }) => css`
+  background-color: ${theme.colors.primary};
   top: 0;
-  background: var(--primary);
   color: var(--gray-100);
   padding: 24px 0;
   width: 100%;
@@ -85,4 +86,5 @@ export const Container = styled.header`
       justify-content: start;
     }
   }
+  `}
 `;

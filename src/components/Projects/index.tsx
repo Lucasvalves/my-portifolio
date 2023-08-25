@@ -84,6 +84,13 @@ export const Projects = () => {
             </motion.div>
           ))}
         </div>
+      <motion.span className="seeMore"
+             variants={itemVariantsTitles}
+        transition= {{
+
+          duration: 2,
+        }}><a href="https://github.com/Lucasvalves?tab=repositories" target="blank">Ver mais projetos</a></motion.span>
+
       </motion.div>
     </Container>
   );

@@ -1,4 +1,6 @@
 import { createContext } from 'react';
+import dark from '../styles/themes/dark';
+import light from '../styles/themes/light';
 
 interface ITypes {
   menuIsVisible: boolean;
@@ -39,6 +41,10 @@ const initalvalue = {
   setIsScrolled: () => {
     true;
   },
+  theme: dark,
+  setTheme: () => {
+    light;
+  },
 };
 
-export const AppContext = createContext<ITypes>(initalvalue);
+export const MainContext = createContext<ITypes>(initalvalue);

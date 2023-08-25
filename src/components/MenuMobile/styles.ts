@@ -45,6 +45,7 @@ export const Container = styled.section<IContainerProps>`
   }
   li {
     margin-bottom: 0.5rem;
+    cursor: pointer;
   }
   li:hover {
     color: var(--gray-300);

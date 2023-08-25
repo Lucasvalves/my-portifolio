@@ -2,8 +2,8 @@ import { Container } from './styles';
 import { IoClose } from 'react-icons/io5';
 import { useEffect } from 'react';
 import useAppContext from '../../hook/useAppContext';
-import { Link } from 'react-scroll';
-
+//import { Link } from 'react-scroll';
+import { ItemNavegation } from '../../components/ItemNavegation';
 const MenuMobile = () => {
   const { menuIsVisible, setMenuIsVisible } = useAppContext();
 
@@ -16,7 +16,7 @@ const MenuMobile = () => {
       <IoClose size={45} onClick={() => setMenuIsVisible(false)} />
       <nav>
         <ul>
-          <li>
+          {/*<li>
             <Link
               activeClass="active"
               to="hero"
@@ -79,12 +79,27 @@ const MenuMobile = () => {
               onClick={() => setMenuIsVisible(false)}
             >
               Contato
-            </Link>
-          </li>
+            </Link> 
+      </li>*/}
+          <ItemNavegation to="hero" onClick={() => setMenuIsVisible(false)}>
+            Home
+          </ItemNavegation>
+          <ItemNavegation to="about" onClick={() => setMenuIsVisible(false)}>
+            Sobre Mim
+          </ItemNavegation>
+          <ItemNavegation to="projects" onClick={() => setMenuIsVisible(false)}>
+            Projetos
+          </ItemNavegation>
+          <ItemNavegation to="skills" onClick={() => setMenuIsVisible(false)}>
+            Habilidades
+          </ItemNavegation>
+          <ItemNavegation to="contact" onClick={() => setMenuIsVisible(false)}>
+            Contato
+          </ItemNavegation>
         </ul>
       </nav>
     </Container>
   );
-}
+};
 
 export { MenuMobile };

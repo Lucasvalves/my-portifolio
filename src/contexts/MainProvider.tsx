@@ -1,10 +1,10 @@
 import { ReactNode, useState } from 'react';
-import { AppContext } from './AppContext';
+import { MainContext } from './MainContext';
 
-type AppContextProps = {
+type MainContextProps = {
   children: ReactNode;
 };
-export default function AppProvider({ children }: AppContextProps) {
+export function MainProvider({ children }: MainContextProps) {
   const [menuIsVisible, setMenuIsVisible] = useState<boolean>(false);
   const [openMenu, setOpenMenu] = useState<boolean>(false);
   const [loading, setLoading] = useState<boolean>(false);
@@ -13,7 +13,7 @@ export default function AppProvider({ children }: AppContextProps) {
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
 
   return (
-    <AppContext.Provider
+    <MainContext.Provider
       value={{
         menuIsVisible,
         setMenuIsVisible,
@@ -30,6 +30,6 @@ export default function AppProvider({ children }: AppContextProps) {
       }}
     >
       {children}
-    </AppContext.Provider>
+    </MainContext.Provider>
   );
 }

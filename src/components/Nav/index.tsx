@@ -2,7 +2,7 @@ import { Container } from './styles';
 import { containerVariantsNav } from '../../utils/constsAnimates';
 import { motion } from 'framer-motion';
 
-import { ItemNav } from '../../components/ItemNav';
+import { ItemNavegation } from '../../components/ItemNavegation';
 
 export const Nav = () => {
   //const { setOpenMenu } = useAppContext();
@@ -14,13 +14,13 @@ export const Nav = () => {
         animate="visible"
         variants={containerVariantsNav}
       >
-        <ItemNav to="hero">
+        <ItemNavegation to="hero">
           Home
-        </ItemNav>
-        <ItemNav to="about">Sobre Mim</ItemNav>
-        <ItemNav to="projects">Projetos</ItemNav>
-        <ItemNav to="skills">Habilidades</ItemNav>
-        <ItemNav to="contact">Contato</ItemNav>
+        </ItemNavegation>
+        <ItemNavegation to="about">Sobre Mim</ItemNavegation>
+        <ItemNavegation to="projects">Projetos</ItemNavegation>
+        <ItemNavegation to="skills">Habilidades</ItemNavegation>
+        <ItemNavegation to="contact">Contato</ItemNavegation>
       </motion.ul>
     </Container>
   );

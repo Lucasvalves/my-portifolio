@@ -1,8 +1,11 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Container = styled.section`
   padding: 72px 20px;
-  background-color: var(--secundary);
+  ${({ theme }) => css`
+      background-color: ${theme.colors.secundary};
+
+  `}
   .grid-layout {
     max-width: 1140px;
     margin: 0 auto;
