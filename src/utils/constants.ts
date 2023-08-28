@@ -13,9 +13,7 @@ import mySQL from '.././assets/mysql.svg';
 import sqlServer from '.././assets/sqlServer.svg';
 import mongoDB from '.././assets/mongoDB.svg';
 import git from '.././assets/git.svg';
-import whatsapp from '.././assets/whatsapp.svg';
-import email from '.././assets/email.svg';
-import location from '.././assets/location.svg';
+
 
 export const projects = [
   {
