@@ -1,5 +1,6 @@
 import { Container } from './styles';
-import { AiOutlineWhatsApp, AiOutlineMail } from 'react-icons/ai';
+import { AiOutlineWhatsApp } from 'react-icons/ai';
+import { HiOutlineMail } from 'react-icons/hi';
 import { CiLocationOn } from 'react-icons/ci';
 import { Form } from '../Form';
 import { motion } from 'framer-motion';
@@ -17,7 +18,7 @@ export const Contact = () => {
       link: 'https://wa.me/5571996579989',
     },
     {
-      icon: <AiOutlineMail />,
+      icon: <HiOutlineMail />,
       name: 'Email',
       description: 'lucasvelosoalves@outlook.com',
       link: 'mailto:lucasvelosoalves@outlook.com?subject=Olá...',
@@ -80,9 +81,7 @@ export const Contact = () => {
               {contacts.map((contact, index) => (
                 <div key={index}>
                   <a href={contact.link} target="blank">
-                    <span className="img">
-                      {contact.icon}
-                    </span>
+                    <span className="img">{contact.icon}</span>
                     <span>
                       <h4>{contact.name}</h4>
                       <h4>{contact.description}</h4>

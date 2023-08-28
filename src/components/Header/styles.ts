@@ -38,6 +38,7 @@ export const Container = styled.header`
       color: var(--blue);
       font-size: 30px;
     }
+
     .container-menu-mobile {
       display: flex;
       align-items: center;

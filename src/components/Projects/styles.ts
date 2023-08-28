@@ -35,6 +35,8 @@ export const Container = styled.section`
       flex: 1 1 200px;
       border: solid 1px ${theme.colors.border};
       background-color: ${theme.colors.primary};
+      box-shadow: var(--box-shadow);
+      border-radius: 2px;
     }
     .container-img {
       width: 100%;
@@ -46,6 +48,7 @@ export const Container = styled.section`
     .container-img img {
       width: 90%;
       height: 80%;
+      border-radius: 2px;
     }
     .container-data {
       height: 55%;
@@ -85,7 +88,7 @@ export const Container = styled.section`
       color: var(--gray-300);
     }
     .seeMore {
-      padding-top: 40px; 
+      padding-top: 40px;
       max-width: 1140px;
       margin: auto;
       display: flex;
@@ -102,7 +105,6 @@ export const Container = styled.section`
       }
     }
     @media (min-width: 1024px) and (max-width: 1200px) {
-      //height: 100vh;
       .grid-layout > h2 {
         width: 78%;
         font-size: 1.953rem;

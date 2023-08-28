@@ -23,6 +23,7 @@ export const ThemeProvider = ({ children }: ThemeContextProps) => {
   return (
     <ThemeContext.Provider
       value={{
+        //@ts-ignore
         currentTheme: theme,
         toggleSwitch,
       }}

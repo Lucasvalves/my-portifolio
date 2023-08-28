@@ -11,9 +11,9 @@ export const GlobalStyle = createGlobalStyle`
      --gray-100: #f0f0f0;
      --gray-200: #1f1f1f;
      --gray-300: #9ca3af;
-     --blue: #0d52ff;
-     /* --primary: #111111;
-    --secundary: #151515; */
+     --blue: #0d52ff; 
+     --box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 3px;
+   
    }
    * {
      margin: 0;

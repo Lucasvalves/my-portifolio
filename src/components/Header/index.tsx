@@ -22,7 +22,6 @@ export const Header = () => {
               duration={500}
               onClick={() => setOpenMenu(false)}
             >
-              {/* <img src={logoImg} alt="Logo"/> */}
               <h1>{'<Lucas />'}</h1>
             </Link>
             <Nav />

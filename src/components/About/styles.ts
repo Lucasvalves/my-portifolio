@@ -11,6 +11,7 @@ export const Container = styled.section`
       border: solid 1px ${theme.colors.border};
       margin: 0 auto;
       background-color: ${theme.colors.secundary};
+      box-shadow: var(--box-shadow);
     }
     .wrapper-left {
       width: 90%;
@@ -37,7 +38,7 @@ export const Container = styled.section`
       align-items: center;
       flex-direction: column;
       margin-bottom: 20px;
-      box-sizing: border-box
+      box-sizing: border-box;
     }
     .wrapper-right h2 {
       font-size: 1.25rem;
@@ -184,11 +185,12 @@ export const Container = styled.section`
         width: 60%;
         height: 60%;
         padding-bottom: 0px;
+  
       }
       .frame img {
         width: 100%;
-        height: 102%;
-        margin-top: -25px;
+        height: 105%;
+        margin-top: -35px;
         margin-left: calc(0% - 25px);
       }
       .wrapper-right {

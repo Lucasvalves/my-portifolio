@@ -85,6 +85,10 @@ export const Container = styled.section`
   }
   @media (min-width: 768px) {
     font-size: 3.52rem;
+    .name,
+    .welcome {
+      margin-bottom: -30px;
+    }
     .icon {
       width: 2rem;
     }
