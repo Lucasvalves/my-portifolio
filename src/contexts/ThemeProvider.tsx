@@ -1,20 +1,12 @@
-import { createContext, ReactNode, useState } from 'react';
+import { ReactNode } from 'react';
+import usePersistedState from '../hook/usePersistedState';
+import { ThemeContext } from '../contexts/ThemeContext';
 
-export type Themes = 'dark' | 'light';
-
-type ThemeContextData = {
-  currentTheme: Themes;
-  toggleSwitch: () => any;
-};
 type ThemeContextProps = {
   children: ReactNode;
 };
-export const ThemeContext = createContext<ThemeContextData>(
-  {} as ThemeContextData,
-);
-
 export const ThemeProvider = ({ children }: ThemeContextProps) => {
-  const [theme, setTheme] = useState<Themes>('dark');
+  const [theme, setTheme] = usePersistedState('theme', 'dark');
 
   const toggleSwitch = () => {
     if (theme === 'light') {

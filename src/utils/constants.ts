@@ -104,23 +104,3 @@ export const skills = [
     name: 'Styled Components',
   },
 ];
-export const contacts = [
-  {
-    image: whatsapp,
-    name: 'WhatsApp',
-    description: '+55 71 9-9657-9989',
-    link: 'https://wa.me/5571996579989',
-  },
-  {
-    image: email,
-    name: 'Email',
-    description: 'lucasvelosoalves@outlook.com',
-    link: 'mailto:lucasvelosoalves@outlook.com?subject=Olá...',
-  },
-  {
-    image: location,
-    name: 'Localização',
-    description: 'Lauro de Freitas, BA - BR',
-    link: 'https://goo.gl/maps/Cmyke6t7GYNX1uabA',
-  },
-];

@@ -1,4 +1,4 @@
-import { ThemeProvider } from './theme';
+import { ThemeProvider } from './ThemeProvider';
 import { MainProvider } from './MainProvider';
 import { ReactNode } from 'react';
 type AppContextProps = {

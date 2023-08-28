@@ -1,8 +1,10 @@
 import { Container } from './styles';
-import whatsapp from '../../assets/whatsapp.svg';
-import linkedln from '../../assets/linkedln.svg';
-import gitHub from '../../assets/gitHub.svg';
 import TypeIt from 'typeit-react';
+import {
+  AiFillLinkedin,
+  AiOutlineWhatsApp,
+  AiFillGithub,
+} from 'react-icons/ai';
 
 export const Hero = () => {
   return (
@@ -24,16 +26,16 @@ export const Hero = () => {
         </h1>
         <span className="center">
           <a href="https://wa.me/5571996579989" target="blank">
-            <img src={whatsapp} alt="whatsapp" className="icon" />
+            <AiOutlineWhatsApp className="icon" />
           </a>
           <a
             href="https://www.linkedin.com/in/lucasvelosoalves/"
             target="blank"
           >
-            <img src={linkedln} alt="linkedin" className="icon" />
+            <AiFillLinkedin className="icon" />
           </a>
           <a href="https://github.com/Lucasvalves" target="blank">
-            <img src={gitHub} alt="gitHub" className="icon" />
+            <AiFillGithub className="icon" />
           </a>
         </span>
         <span className="center job">
@@ -43,4 +45,4 @@ export const Hero = () => {
       </div>
     </Container>
   );
-}
+};

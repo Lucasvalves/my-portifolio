@@ -2,85 +2,22 @@ import { Container } from './styles';
 import { IoClose } from 'react-icons/io5';
 import { useEffect } from 'react';
 import useAppContext from '../../hook/useAppContext';
-//import { Link } from 'react-scroll';
 import { ItemNavegation } from '../../components/ItemNavegation';
+import useTheme from '../../hook/useTheme';
+import Switch from 'react-switch';
+
 const MenuMobile = () => {
   const { menuIsVisible, setMenuIsVisible } = useAppContext();
+  const { toggleSwitch, currentTheme } = useTheme();
 
   useEffect(() => {
     document.body.style.overflowY = menuIsVisible ? 'hidden' : 'auto';
   }, [menuIsVisible]);
-
   return (
     <Container isVisible={menuIsVisible}>
       <IoClose size={45} onClick={() => setMenuIsVisible(false)} />
       <nav>
         <ul>
-          {/*<li>
-            <Link
-              activeClass="active"
-              to="hero"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              onClick={() => setMenuIsVisible(false)}
-            >
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link
-              activeClass="active"
-              to="about"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              onClick={() => setMenuIsVisible(false)}
-            >
-              Sobre mim
-            </Link>
-          </li>
-          <li>
-            <Link
-              activeClass="active"
-              to="skills"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              onClick={() => setMenuIsVisible(false)}
-            >
-              Habilidades
-            </Link>
-          </li>
-          <li>
-            <Link
-              activeClass="active"
-              to="projects"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              onClick={() => setMenuIsVisible(false)}
-            >
-              Projetos
-            </Link>
-          </li>
-          <li>
-            <Link
-              activeClass="active"
-              to="contact"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              onClick={() => setMenuIsVisible(false)}
-            >
-              Contato
-            </Link> 
-      </li>*/}
           <ItemNavegation to="hero" onClick={() => setMenuIsVisible(false)}>
             Home
           </ItemNavegation>
@@ -96,6 +33,19 @@ const MenuMobile = () => {
           <ItemNavegation to="contact" onClick={() => setMenuIsVisible(false)}>
             Contato
           </ItemNavegation>
+          <div className="switch">
+            <Switch
+              onChange={toggleSwitch }
+              checked={currentTheme == 'light'}
+              checkedIcon={false}
+              uncheckedIcon={false}
+              height={10}
+              width={40}
+              handleDiameter={20}
+              offColor="#0D52FF"
+              onColor="#0D52FF"
+            />
+          </div>
         </ul>
       </nav>
     </Container>

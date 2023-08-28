@@ -36,9 +36,8 @@ export const Container = styled.section`
       display: flex;
       align-items: center;
       flex-direction: column;
-      margin-bottom: 10px;
-      box-sizing: border-box;
-   
+      margin-bottom: 20px;
+      box-sizing: border-box
     }
     .wrapper-right h2 {
       font-size: 1.25rem;
@@ -68,10 +67,10 @@ export const Container = styled.section`
     a:first-child {
       text-decoration: underline;
       font-size: 0.8rem;
-      color: var(--gray-100);
+      color: ${theme.colors.text};
     }
     a:first-child:hover {
-      color: var(--gray-300);
+      color: ${theme.colors.text_hover};
     }
     .or {
       font-size: 0.8rem;
@@ -207,7 +206,6 @@ export const Container = styled.section`
         font-size: 1rem;
       }
       a:first-child {
-        text-decoration: underline;
         font-size: 0.8rem;
       }
       .or {

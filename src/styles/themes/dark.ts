@@ -4,6 +4,9 @@ export default {
     secundary: '#151515',
     border: '#1f1f1f;',
     text: '#ffffff',
-    // background: '#111111',
+    background_button: '#F1F1F1',
+    text_hover: '#ffffffdf',
+
+    // #9ca3af
   },
 };

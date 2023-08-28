@@ -25,7 +25,7 @@ export const Container = styled.section<IContainerProps>`
   pointer-events: none;
   transform: translateY(50px);
   transition: 0.5s;
-
+  color:  #ffffff;
   > svg {
     position: absolute;
     top: 1rem;
@@ -42,6 +42,12 @@ export const Container = styled.section<IContainerProps>`
     flex-direction: column;
     transform: scale(0.7);
     transition: 0.7s;
+  }
+  ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
   li {
     margin-bottom: 0.5rem;
