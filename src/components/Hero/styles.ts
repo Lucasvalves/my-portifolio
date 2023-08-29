@@ -6,9 +6,11 @@ export const Container = styled.section`
   justify-content: center;
   font-size: 1.625rem;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   background-color: var(--primary);
-
+  >div{
+    max-width: 1140px;
+  }
   .welcome {
     display: block;
     font-family: 'caveat';
@@ -38,7 +40,7 @@ export const Container = styled.section`
     justify-content: center;
   }
   .icon {
-    width: 1.2rem;
+    /* width: 1.2rem; */
     height: auto;
     margin-left: 1rem;
   }

@@ -14,7 +14,6 @@ import sqlServer from '.././assets/sqlServer.svg';
 import mongoDB from '.././assets/mongoDB.svg';
 import git from '.././assets/git.svg';
 
-
 export const projects = [
   {
     image: projectRide,
@@ -22,7 +21,7 @@ export const projects = [
     description:
       'O aplicativo mede a velocidade de uma atividade como corrida de bicicleta, registrando  dados como  distância percorrida, tempo e localização. Feito Java Script',
     linkGitHub: 'https://github.com/Lucasvalves/app_ride',
-    page: 'https://goo.gl/maps/Cmyke6t7GYNX1uabA',
+    page: 'https://lucasvalves.github.io/app_ride/',
     stack: 'frontend',
   },
   {
