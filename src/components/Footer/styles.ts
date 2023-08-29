@@ -10,29 +10,27 @@ export const Container = styled.footer`
     font-size: 1rem;
     font-weight: 500;
     height: 6rem;
-    .icon {
-      width: 1.6rem;
-      margin-left: 0.8rem;
-      @media (max-width: 330px) {
-        width: 1.4rem;
-      }
-    }
+
     p {
       color: ${theme.colors.text};
+      width: 80%;
+      text-align: center;
     }
     span {
       color: var(--blue);
       font-weight: 600;
     }
-    .icon:hover {
-      transform: scale(1.1);
-      transition: 0.5s;
-    }
     @media (max-width: 330px) {
       font-size: 0.6rem;
+      p {
+        text-align: left;
+      }
     }
     @media (min-width: 331px) and (max-width: 480px) {
       font-size: 0.8rem;
+      p {
+        text-align: left;
+      }
     }
   `}
 `;

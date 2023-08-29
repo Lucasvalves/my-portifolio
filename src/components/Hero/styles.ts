@@ -4,7 +4,7 @@ export const Container = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
+  font-size: 1.625rem;
   width: 100%;
   height: 100vh;
   background-color: var(--primary);
@@ -17,7 +17,7 @@ export const Container = styled.section`
     font-weight: 600;
     background-image: linear-gradient(
       90deg,
-      rgba(9, 9, 121, 1) 0%,
+      rgba(9, 9, 121, 10) 0%,
       #0d52ff 50%,
       rgba(0, 212, 255, 1) 100%
     );
@@ -60,16 +60,15 @@ export const Container = styled.section`
     background-color: var(--blue);
   }
   @media (max-width: 359px) {
-    font-size: 1rem;
-    .icon {
-      width: 1rem;
+    font-size: 1.5rem;
+    .welcome {
+      font-size: 1.5rem;
+      text-align: center;
     }
-    .job {
-      font-size: 0.7rem;
-    }
-    .line {
-      width: 1rem;
-    }
+    .job{
+      font-size: .8rem;
+  }
+
   }
   @media (min-width: 480px) and (max-width: 767px) {
     font-size: 2.52rem;

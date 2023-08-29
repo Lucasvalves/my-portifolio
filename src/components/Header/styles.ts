@@ -35,7 +35,17 @@ export const Container = styled.header`
       font-family: 'sora', sans-serif;
       font-weight: 600;
       white-space: nowrap;
-      color: var(--blue);
+      background-image: linear-gradient(
+        20deg,
+        rgba(9, 9, 121, 10) 0%,
+        #0d52ff 50%,
+        rgba(0, 212, 255, 1) 100%
+      );
+
+      color: black;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
       font-size: 30px;
     }
 
@@ -74,9 +84,6 @@ export const Container = styled.header`
       .container-menu {
         justify-content: start;
       }
-      .container-menu a > img {
-        width: 50px;
-      }
     }
     @media (max-width: 700px) {
       > section {
@@ -85,6 +92,9 @@ export const Container = styled.header`
       padding: 14.5px 0px;
       .container-menu {
         justify-content: start;
+      }
+      .container-menu a h1 {
+        font-size: 25px;
       }
     }
   `}

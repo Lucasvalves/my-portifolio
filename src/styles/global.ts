@@ -13,7 +13,6 @@ export const GlobalStyle = createGlobalStyle`
      --gray-300: #9ca3af;
      --blue: #0d52ff; 
      --box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 3px;
-   
    }
    * {
      margin: 0;
@@ -40,12 +39,10 @@ export const GlobalStyle = createGlobalStyle`
    button {
      cursor: pointer;
    }
-
    a {
      color: inherit;
      text-decoration: none;
    }
-
    ul {
      list-style: none;
    }
@@ -55,8 +52,6 @@ export const GlobalStyle = createGlobalStyle`
      max-width: 100%;
    }
  ${({ theme }) => css`
-   //background-color: ${theme.colors.primary};
-
    body {
      background-color: ${theme.colors.primary};
      color: ${theme.colors.text};

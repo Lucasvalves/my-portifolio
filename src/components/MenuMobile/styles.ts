@@ -25,7 +25,7 @@ export const Container = styled.section<IContainerProps>`
   pointer-events: none;
   transform: translateY(50px);
   transition: 0.5s;
-  color:  #ffffff;
+  color: var(--gray-300);
   > svg {
     position: absolute;
     top: 1rem;
@@ -48,10 +48,12 @@ export const Container = styled.section<IContainerProps>`
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 1rem;
   }
   li {
     margin-bottom: 0.5rem;
     cursor: pointer;
+    font-size: 1.2rem;
   }
   li:hover {
     color: var(--gray-300);
