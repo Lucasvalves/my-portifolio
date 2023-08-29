@@ -14,7 +14,6 @@ import { Theme } from './tampletes/theme';
 function App() {
   return (
     <AppProvider>
-      {/* <ThemeProvider theme={dark}> */}
       <Theme>
       <LayoutGroup>
         <main id="main">
@@ -31,7 +30,6 @@ function App() {
         </main>
       </LayoutGroup>
       </Theme>
-      {/* </ThemeProvider> */}
     </AppProvider>
   );
 }

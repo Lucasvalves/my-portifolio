@@ -7,6 +7,5 @@ export default {
     background_button: '#F1F1F1',
     text_hover: '#ffffffdf',
 
-    // #9ca3af
   },
 };

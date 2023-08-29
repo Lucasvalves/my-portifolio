@@ -40,7 +40,6 @@ export const Container = styled.section`
     justify-content: center;
   }
   .icon {
-    /* width: 1.2rem; */
     height: auto;
     margin-left: 1rem;
   }

@@ -30,7 +30,7 @@ export const projects = [
     description:
       'O projeto tem como objetivo fazer a gerência de usuários e clientes de salão de beleza, feito em Node JS, TypeScript, React',
     linkGitHub: 'https://github.com/Lucasvalves/sistema-de-agendamento',
-    page: 'https://goo.gl/maps/Cmyke6t7GYNX1uabA',
+    page: '',
     stack: 'frontend',
   },
   {
