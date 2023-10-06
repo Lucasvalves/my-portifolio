@@ -4,6 +4,8 @@ export const Container = styled.header`
   ${({ theme }) => css`
     background-color: ${theme.colors.primary};
     top: 0;
+    left: 0;
+    z-index: 999;
     color: var(--gray-100);
     padding: 24px 0;
     width: 100%;

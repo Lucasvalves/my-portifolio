@@ -8,12 +8,12 @@ export const Container = styled.section`
   width: 100%;
   height: 90vh;
   background-color: var(--primary);
-  >div{
+  > div {
     max-width: 1140px;
   }
   .welcome {
     display: block;
-    font-family: 'caveat';
+    font-family: 'caveat', sans-serif;;
   }
   .name {
     font-weight: 600;
@@ -63,16 +63,16 @@ export const Container = styled.section`
   @media (max-width: 359px) {
     font-size: 1.5rem;
     .welcome {
-      font-size: 1.5rem;
       text-align: center;
     }
-    .job{
-      font-size: .8rem;
-  }
-
+    .job {
+      font-size: 0.8rem;
+    }
   }
   @media (min-width: 480px) and (max-width: 767px) {
     font-size: 2.52rem;
+    .welcome {
+    }
     .icon {
       width: 1.5rem;
     }
@@ -88,6 +88,8 @@ export const Container = styled.section`
     .name,
     .welcome {
       margin-bottom: -30px;
+    }
+    .welcome {
     }
     .icon {
       width: 2rem;
