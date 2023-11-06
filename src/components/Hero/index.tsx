@@ -73,7 +73,7 @@ export const Hero = () => {
           }}
         >
           <div className="line"></div>
-          <h2 className="job">Desenvolvedor Full-Stack</h2>
+          <h2 className="job">Desenvolvedor Front-end</h2>
         </motion.span>
       </motion.div>
     </Container>
