@@ -75,6 +75,9 @@ export const Container = styled.section`
       justify-content: center;
       gap: 5px;
     }
+    a {
+      color: red;
+    }
     a:hover {
       color: var(--gray-300);
       transition: 0.5s;

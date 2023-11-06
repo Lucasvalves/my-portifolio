@@ -9,6 +9,7 @@ import { motion } from 'framer-motion';
 import {
   containerVariants,
   itemVariantsTitles,
+  itemsVariantsEixoX,
 } from '../../utils/constsAnimates';
 
 export const Hero = () => {
@@ -52,18 +53,36 @@ export const Hero = () => {
             duration: 2,
           }}
         >
-          <a href="https://wa.me/5571996579989" target="blank">
+          <motion.a
+            href="https://wa.me/5571996579989"
+            target="blank"
+            variants={itemsVariantsEixoX}
+            transition={{
+              duration: 4,
+            }}
+          >
             <AiOutlineWhatsApp className="icon" />
-          </a>
-          <a
+          </motion.a>
+          <motion.a
             href="https://www.linkedin.com/in/lucasvelosoalves/"
             target="blank"
+            variants={itemsVariantsEixoX}
+            transition={{
+              duration: 5,
+            }}
           >
             <AiFillLinkedin className="icon" />
-          </a>
-          <a href="https://github.com/Lucasvalves" target="blank">
+          </motion.a>
+          <motion.a
+            href="https://github.com/Lucasvalves"
+            target="blank"
+            variants={itemsVariantsEixoX}
+            transition={{
+              duration: 6,
+            }}
+          >
             <AiFillGithub className="icon" />
-          </a>
+          </motion.a>
         </motion.span>
         <motion.span
           className="center job"
