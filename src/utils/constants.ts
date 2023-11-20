@@ -25,13 +25,13 @@ export const projects = [
     stack: 'frontend',
   },
   {
-    image: projectSalao,
-    name: 'Gerenciador de Salão',
+    image: '',
+    name: 'Better Health',
     description:
-      'O projeto tem como objetivo fazer a gerência de usuários e clientes de salão de beleza, feito em Node JS, TypeScript, React',
-    linkGitHub: 'https://github.com/Lucasvalves/sistema-de-agendamento',
+      'O projeto tem como objetivo fazer a gerência de usuários, médicos e pacientes de clinicas de saúde, realizando agendamentos de consultas. feito em NodeJS, TypeScript, React',
+    linkGitHub: 'https://github.com/Lucasvalves/better_health',
     page: '',
-    stack: 'frontend',
+    stack: 'backend',
   },
   {
     image: projectMemory,

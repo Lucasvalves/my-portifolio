@@ -83,6 +83,16 @@ export const Container = styled.section`
         margin-top: 2px;
       }
     }
+    @media (max-width: 280px) {
+      .wrapper-right > span {
+        gap: 10px;
+      }
+      a:first-child,
+      .or,
+      Button {
+        font-size: .65rem;
+      }
+    }
     @media (min-width: 480px) and (max-width: 767px) {
       .frame {
         width: 100%;
@@ -184,7 +194,6 @@ export const Container = styled.section`
         width: 60%;
         height: 60%;
         padding-bottom: 0px;
-  
       }
       .frame img {
         width: 100%;
