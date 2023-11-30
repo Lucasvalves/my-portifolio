@@ -1,5 +1,4 @@
 import projectMemory from '.././assets/Project Memory Game.png';
-import projectSalao from '.././assets/Project Grenciador de Salão.png';
 import projectRide from '.././assets/Project Ride.png';
 import js from '.././assets/js.svg';
 import html from '.././assets/html.svg';
