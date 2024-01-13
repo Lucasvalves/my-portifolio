@@ -8,6 +8,7 @@ export const Container = styled.nav`
       display: flex;
       gap: 2rem;
       justify-content: end;
+      cursor: pointer;
       align-items: center;
       height: 100%;
     }

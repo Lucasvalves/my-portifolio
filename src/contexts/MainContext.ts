@@ -15,6 +15,8 @@ interface ITypes {
   setError: (newState: boolean) => void;
   isScrolled: boolean;
   setIsScrolled: (newState: boolean) => void;
+  mobileBg: boolean;
+  setMobileBg: (newState: boolean) => void;
 }
 const initalvalue = {
   menuIsVisible: false,
@@ -44,6 +46,10 @@ const initalvalue = {
   theme: dark,
   setTheme: () => {
     light;
+  },
+  mobileBg: false,
+  setMobileBg: () => {
+    true;
   },
 };
 

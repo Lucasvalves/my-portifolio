@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components';
 interface IContainerProps {
   isVisible: boolean;
+  menuColor: boolean;
 }
 
 export const Container = styled.section<IContainerProps>`
@@ -43,7 +44,7 @@ export const Container = styled.section<IContainerProps>`
     transform: scale(0.7);
     transition: 0.7s;
   }
-  ul{
+  ul {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,6 +59,11 @@ export const Container = styled.section<IContainerProps>`
   li:hover {
     color: var(--gray-300);
   }
+  ${({ menuColor }) =>
+    menuColor &&
+    css`
+      background: rgba(240, 240, 240, 0.98);
+    `}
 
   ${({ isVisible }) =>
     isVisible &&

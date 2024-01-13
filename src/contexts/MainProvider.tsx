@@ -11,6 +11,7 @@ export function MainProvider({ children }: MainContextProps) {
   const [success, setSuccess] = useState<boolean>(false);
   const [error, setError] = useState<boolean>(false);
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
+  const [mobileBg, setMobileBg] = useState<boolean>(false);
 
   return (
     <MainContext.Provider
@@ -27,6 +28,8 @@ export function MainProvider({ children }: MainContextProps) {
         setError,
         isScrolled,
         setIsScrolled,
+        mobileBg,
+        setMobileBg,
       }}
     >
       {children}

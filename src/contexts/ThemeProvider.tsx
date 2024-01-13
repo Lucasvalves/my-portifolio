@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { ReactNode, useState } from 'react';
 import usePersistedState from '../hook/usePersistedState';
 import { ThemeContext } from '../contexts/ThemeContext';
 
@@ -26,6 +26,7 @@ export const ThemeProvider = ({ children }: ThemeContextProps) => {
         //@ts-ignore
         currentTheme: theme,
         toggleSwitch,
+
       }}
     >
       {children}

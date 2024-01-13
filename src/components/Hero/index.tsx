@@ -35,15 +35,21 @@ export const Hero = () => {
             Olá, bem vindo(a)! sou o
           </motion.span>
           <span className="center">
-            <span className="name">
+            <motion.span
+              className="name"
+              variants={itemVariantsTitles}
+              transition={{
+                duration: 2,
+              }}
+            >
               <TypeIt
                 options={{
                   strings: ['Lucas Veloso'],
-                  speed: 150,
+                  speed: 350,
                   waitUntilVisible: true,
                 }}
               ></TypeIt>
-            </span>
+            </motion.span>
           </span>
         </h1>
         <motion.span

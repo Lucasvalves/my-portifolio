@@ -7,14 +7,20 @@ import useTheme from '../../hook/useTheme';
 import Switch from 'react-switch';
 
 const MenuMobile = () => {
-  const { menuIsVisible, setMenuIsVisible } = useAppContext();
+  const { menuIsVisible, setMenuIsVisible, mobileBg, setMobileBg } =
+    useAppContext();
   const { toggleSwitch, currentTheme } = useTheme();
-
   useEffect(() => {
     document.body.style.overflowY = menuIsVisible ? 'hidden' : 'auto';
   }, [menuIsVisible]);
+
+  if (currentTheme === 'light') {
+    setMobileBg(true);
+  } else {
+    setMobileBg(false);
+  }
   return (
-    <Container isVisible={menuIsVisible}>
+    <Container isVisible={menuIsVisible} menuColor={mobileBg}>
       <IoClose size={45} onClick={() => setMenuIsVisible(false)} />
       <nav>
         <ul>
@@ -35,7 +41,7 @@ const MenuMobile = () => {
           </ItemNavegation>
           <div className="switch">
             <Switch
-              onChange={toggleSwitch }
+              onChange={toggleSwitch}
               checked={currentTheme == 'light'}
               checkedIcon={false}
               uncheckedIcon={false}
