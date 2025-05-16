@@ -1,5 +1,5 @@
 import { Container } from './styles';
-import myPhoto from '../../assets/my_photo.png';
+import myPhoto from '../../assets/my_photo.jpeg';
 import { PiArrowLineDownLight } from 'react-icons/pi';
 import { Button } from '../Button';
 import { motion } from 'framer-motion';
@@ -53,8 +53,7 @@ export function About() {
                   duration: 1,
                 }}
               >
-                Sou Desenvolvedor Web Full-Stack em busca da minha primeira
-                oportunidade na area.
+                Sou Técnico em Desenvolvimento de Sistemas e atualmente curso Bacharelado em Sistemas de Informação. Tenho paixão por tecnologia e estou sempre em busca de aprimorar minhas habilidades técnicas e práticas.
               </motion.p>
               <motion.p
                 variants={itemsVariantsEixoX}
@@ -63,11 +62,7 @@ export function About() {
                   duration: 1,
                 }}
               >
-                Sou formado em Técnico em Desenvolvimento de Sistemas pelo SENAI
-                e estou cursando Bacharelado em Sistemas de Informação na
-                UNIFACS. Atualmente continuo aprimorando minhas habilidades no
-                desenvolvimento de projetos, colocando-os em prática, com
-                aprendizado contínuo.
+                No meu dia a dia como desenvolvedor, trabalho com tecnologias como JavaScript, Node.js, React, Next.js e Python. Tenho experiência com consumo de APIs, versionamento com Git, banco de dados e sigo metodologias ágeis com foco em lógica e resolução de problemas.
               </motion.p>
             </div>
             <motion.span
