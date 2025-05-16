@@ -50,6 +50,8 @@ const MenuMobile = () => {
               handleDiameter={20}
               offColor="#0D52FF"
               onColor="#0D52FF"
+              onHandleColor="#ece9e9"
+              offHandleColor="#ece9e9"
             />
           </div>
         </ul>
