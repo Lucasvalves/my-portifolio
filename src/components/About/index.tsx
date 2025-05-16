@@ -77,7 +77,7 @@ export function About() {
               </a>
               <span className="or">ou</span>
               <a
-                href="https://drive.google.com/file/d/1rgyc01UHwQ7BWC_WC3tdLo61qqAVEJif/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1c4wa4UYKlneB2jdYw3ncEl5-diP0IW2J/view?usp=sharing"
                 target="blank"
               >
                 <Button>
