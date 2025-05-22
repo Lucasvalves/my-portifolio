@@ -72,13 +72,14 @@ export function About() {
                 duration: 1,
               }}
             >
-              <a href="https://wa.me/5571996579989" target="blank">
+              <a href="https://wa.me/5571996579989" target="_blank" rel="noopener noreferrer">
                 Entre em contato
               </a>
               <span className="or">ou</span>
               <a
                 href="https://drive.google.com/file/d/1c4wa4UYKlneB2jdYw3ncEl5-diP0IW2J/view?usp=sharing"
-                target="blank"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <Button>
                   <PiArrowLineDownLight size={15} />

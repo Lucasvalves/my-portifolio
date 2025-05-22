@@ -56,6 +56,7 @@ export const Projects = () => {
                         href={projetc.linkGitHub}
                         target="_blank"
                         title="Ver Código"
+                        rel="noopener noreferrer"
                       >
                         <AiFillGithub size="20" />
                       </a>
@@ -63,6 +64,7 @@ export const Projects = () => {
                         href={projetc.page}
                         target="_blank"
                         title="Ver Projeto"
+                        rel="noopener noreferrer"
                       >
                         <AiOutlineLink size="20" />
                       </a>
@@ -73,6 +75,7 @@ export const Projects = () => {
                         href={projetc.linkGitHub}
                         target="_blank"
                         title="Ver Código"
+                        rel="noopener noreferrer"
                       >
                         <AiFillGithub size="20" />
                       </a>
@@ -89,7 +92,7 @@ export const Projects = () => {
         transition= {{
 
           duration: 2,
-        }}><a href="https://github.com/Lucasvalves?tab=repositories" target="blank">Ver mais projetos</a></motion.span>
+        }}><a href="https://github.com/Lucasvalves?tab=repositories" target="blank" rel="noopener noreferrer">Ver mais projetos</a></motion.span>
 
       </motion.div>
     </Container>

@@ -80,7 +80,7 @@ export const Contact = () => {
             <div className="contactsLinks">
               {contacts.map((contact, index) => (
                 <div key={index}>
-                  <a href={contact.link} target="blank">
+                  <a href={contact.link} target="blank" rel="noopener noreferrer">
                     <span className="img">{contact.icon}</span>
                     <span>
                       <h4>{contact.name}</h4>

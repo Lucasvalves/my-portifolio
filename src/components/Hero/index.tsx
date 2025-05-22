@@ -61,7 +61,8 @@ export const Hero = () => {
         >
           <motion.a
             href="https://wa.me/5571996579989"
-            target="blank"
+            target="_blank"
+            rel="noopener noreferrer"
             variants={itemsVariantsEixoX}
             transition={{
               duration: 4,
@@ -71,7 +72,8 @@ export const Hero = () => {
           </motion.a>
           <motion.a
             href="https://www.linkedin.com/in/lucasvelosoalves/"
-            target="blank"
+            target="_blank"
+            rel="noopener noreferrer"
             variants={itemsVariantsEixoX}
             transition={{
               duration: 5,
@@ -81,7 +83,8 @@ export const Hero = () => {
           </motion.a>
           <motion.a
             href="https://github.com/Lucasvalves"
-            target="blank"
+            target="_blank"
+            rel="noopener noreferrer"
             variants={itemsVariantsEixoX}
             transition={{
               duration: 6,
